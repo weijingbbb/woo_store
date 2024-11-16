@@ -1,0 +1,68 @@
+name: woo_store
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  # 启动图适配
+  flutter_native_splash: ^2.4.2
+  # 国际化
+  intl: 0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  # app 图标
+  icons_launcher: ^3.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+  
+# 在终端运行下面的命令,将会生产app的图标
+# app 图标  dart run icons_launcher:create
+icons_launcher:
+  image_path: "assets/icon/launcher_icon.png"
+  platforms:
+    android:
+      enable: true
+      notification_image: "assets/icon/ic_foreground.png"
+      # adaptive_background_color: '#ffffff'
+      adaptive_background_image: "assets/icon/ic_background.png"
+      adaptive_foreground_image: "assets/icon/ic_foreground.png"
+    ios:
+      enable: true
+# 启动图适配
+# dart run flutter_native_splash:create
+# iOS 请到 info.plist 修改 UIStatusBarHidden 为 false --- 这个好像不用修改了
+flutter_native_splash:
+  web: false
+  color: "#ffffff"
+  image: assets/images/flutter_native_splash.png
+  fullscreen: true
+flutter_intl:
+  enabled: true
