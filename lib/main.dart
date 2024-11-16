@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:pull_to_refresh_flutter3/pull_to_refresh_flutter3.dart';
 import 'package:woo_store/global.dart';
-import 'package:woo_store/services/index.dart';
+import 'package:woo_store/routes/index.dart';
 
 void main() {
   // 项目准备完毕
@@ -12,7 +12,6 @@ void main() {
   Global.init().then((_) {
     Future.wait([
       Future.delayed(const Duration(seconds: 1)),
-      StorageService.to.setString('name', 'ccc'),
     ]).whenComplete(() {
       runApp(const MyApp());
       // 移除启动屏图片
@@ -42,13 +41,11 @@ class MyApp extends StatelessWidget {
   }
 
   Widget _buildMaterialApp() {
-    final name = StorageService.to.getString('name');
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Woo Store',
-      home: Scaffold(
-        body: Center(child: Text('项目准备完毕, 姓名: $name')),
-      ),
+      // 路由
+      routerConfig: Routes.config,
     );
   }
 }
