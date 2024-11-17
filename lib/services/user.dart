@@ -15,7 +15,7 @@ class UserService extends GetxController {
   bool _isLogin = false;
 
   // 用户令牌
-  String token = '';
+  String _token = '';
 
   // 用户的资料
   UserProfileModel _profile = UserProfileModel();
@@ -23,8 +23,8 @@ class UserService extends GetxController {
   /// 是否登录
   bool get isLogin => _isLogin;
 
-  /// 是否有令牌 token
-  bool get hasToken => token.isNotEmpty;
+  /// 访问用户令牌
+  String get token => _token;
 
   /// 用户的资料
   UserProfileModel get profile => _profile;
@@ -32,7 +32,7 @@ class UserService extends GetxController {
 
   /// 获取用户 profile
   Future<void> getProfile() async {
-    if (token.isEmpty) return;
+    if (_token.isEmpty) return;
     UserProfileModel result = await UserApi.profile();
     
     // 如果数据获取成功，更新数据，更新_isLogin
@@ -55,9 +55,9 @@ class UserService extends GetxController {
 
   // 保存用户的token
   Future<void> saveToken(String newToken) async {
-    token = newToken;
+    _token = newToken;
     // 存储token
-    await StorageService.to.setString(Constants.storageToken, token);
+    await StorageService.to.setString(Constants.storageToken, _token);
   }
 
   // 保存登录状态到存储
@@ -76,7 +76,7 @@ class UserService extends GetxController {
   void onInit() {
     // 初始化时，读取存储中的登录状态、token
     _isLogin = StorageService.to.getBool(Constants.storageIsLogin);
-    token = StorageService.to.getString(Constants.storageToken);
+    _token = StorageService.to.getString(Constants.storageToken);
     _profile = UserProfileModel.fromJson(
         jsonDecode(StorageService.to.getString(Constants.storageProfile)));
     super.onInit();

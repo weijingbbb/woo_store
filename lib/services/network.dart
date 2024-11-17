@@ -130,7 +130,7 @@ class RequestInterceptors extends Interceptor {
     // super.onRequest(options, handler);
 
     // http header 头加入 Authorization
-    if (UserService.to.hasToken) {
+    if (UserService.to.token.isEmpty) {
       options.headers['Authorization'] = 'Bearer ${UserService.to.token}';
     }
 
