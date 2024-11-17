@@ -14,5 +14,7 @@ class RouteNames {
   static final noAuthPaths = [
     systemMain,
     systemSplash,
+    systemLogin,
+    systemHome
   ];
 }

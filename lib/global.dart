@@ -13,6 +13,8 @@ class Global {
     ]).whenComplete(() {
       // 初始化后置的服务
       Get.put<ConfigService>(ConfigService());
+      // 用户数据服务
+      Get.put<UserService>(UserService());
     });
   }
 }

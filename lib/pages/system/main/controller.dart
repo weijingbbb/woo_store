@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:woo_store/utils/index.dart';
 
 class MainController extends GetxController {
   MainController();
@@ -9,7 +8,7 @@ class MainController extends GetxController {
   int currentPage = 0;
 
   void changePage(int page) {
-    Console.log(page);
+    // Console.log(page);
     currentPage = page;
     update(['navigation']);
   }
