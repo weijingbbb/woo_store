@@ -12,7 +12,7 @@ class HomePage extends GetView<HomeController> {
   const HomePage({super.key});
 
   // 主视图
-  Widget _buildView() {
+  Widget _buildView(BuildContext context) {
     List<Locale> list = S.delegate.supportedLocales;
     List<Widget> widgets = [];
     for (var el in list) {
@@ -40,6 +40,36 @@ class HomePage extends GetView<HomeController> {
           ),
           const SizedBox(height: 20),
           ...widgets,
+
+          ListTile(
+            title: const Text('根据系统'),
+            trailing: CupertinoSwitch(
+                value: controller.isSystem,
+                onChanged: (_) {
+                  controller.setThemeMode(ThemeMode.system);
+                }),
+          ),
+          ListTile(
+            title: const Text('亮色'),
+            trailing: CupertinoSwitch(
+                value: controller.isLight,
+                onChanged: (_) {
+                  controller.setThemeMode(ThemeMode.light);
+                }),
+          ),
+          ListTile(
+            title: const Text('暗黑'),
+            trailing: CupertinoSwitch(
+                value: controller.isDark,
+                onChanged: (_) {
+                  controller.setThemeMode(ThemeMode.dark);
+                }),
+          ),
+          Container(
+            width: 100,
+            height: 40,
+            color: Theme.of(context).colorScheme.tertiary,
+          )
         ],
       ),
     );
@@ -54,7 +84,7 @@ class HomePage extends GetView<HomeController> {
         return Scaffold(
           appBar: AppBar(title: const Text("home")),
           body: SafeArea(
-            child: _buildView(),
+            child: _buildView(context),
           ),
         );
       },

@@ -1,6 +1,7 @@
 library services;
 
 export 'config.dart';
-export 'storage.dart';
-export 'user.dart';
 export 'language.dart';
+export 'storage.dart';
+export 'theme.dart';
+export 'user.dart';

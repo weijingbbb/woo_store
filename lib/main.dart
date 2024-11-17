@@ -8,6 +8,7 @@ import 'package:woo_store/generated/l10n.dart';
 import 'package:woo_store/global.dart';
 import 'package:woo_store/routes/index.dart';
 import 'package:woo_store/services/index.dart';
+import 'package:woo_store/style/index.dart';
 
 void main() {
   // 项目准备完毕
@@ -60,6 +61,10 @@ class MyApp extends StatelessWidget {
           GlobalCupertinoLocalizations.delegate,
           S.delegate,
         ],
+        // 主题
+        themeMode: AppTheme.mode,
+        darkTheme: AppTheme.dark,
+        theme: AppTheme.light,
       );
     });
   }
