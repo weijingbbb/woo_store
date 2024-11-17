@@ -15,6 +15,8 @@ class Global {
       Get.put<ConfigService>(ConfigService());
       // 用户数据服务
       Get.put<UserService>(UserService());
+      // 语言服务
+      Get.put<LanguageService>(LanguageService());
     });
   }
 }

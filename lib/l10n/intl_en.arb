@@ -2,5 +2,8 @@
     "en": "English",
     "zh": "Chinese",
     "lang_en": "English",
-    "lang_zh": "Chinese"
+    "lang_zh": "Chinese",
+    "navigation_home": "Home",
+    "navigation_cart": "Cart",
+    "navigation_profile": "Profile"
 }

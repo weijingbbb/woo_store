@@ -1,9 +1,13 @@
 import 'package:ducafe_ui_core/ducafe_ui_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:get/get.dart';
 import 'package:pull_to_refresh_flutter3/pull_to_refresh_flutter3.dart';
+import 'package:woo_store/generated/l10n.dart';
 import 'package:woo_store/global.dart';
 import 'package:woo_store/routes/index.dart';
+import 'package:woo_store/services/index.dart';
 
 void main() {
   // 项目准备完毕
@@ -41,11 +45,22 @@ class MyApp extends StatelessWidget {
   }
 
   Widget _buildMaterialApp() {
-    return MaterialApp.router(
-      debugShowCheckedModeBanner: false,
-      title: 'Woo Store',
-      // 路由
-      routerConfig: Routes.config,
-    );
+    return GetBuilder<ConfigService>(builder: (_) {
+      return MaterialApp.router(
+        debugShowCheckedModeBanner: false,
+        title: 'Woo Store',
+        // 路由
+        routerConfig: Routes.config,
+        // 语言 - 翻译
+        supportedLocales: S.delegate.supportedLocales,
+        locale: LanguageService.to.locale,
+        localizationsDelegates: const [
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+          S.delegate,
+        ],
+      );
+    });
   }
 }

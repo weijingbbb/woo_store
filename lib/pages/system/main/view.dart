@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:go_router/go_router.dart';
+import 'package:woo_store/generated/l10n.dart';
 import 'package:woo_store/pages/index.dart';
 import 'package:woo_store/routes/index.dart';
 import 'package:woo_store/services/index.dart';
@@ -35,11 +36,11 @@ class MainPage extends GetView<MainController> {
                   currentIndex: controller.currentPage,
                   items: [
                     NavigationItemModel(
-                      label: '首页',
+                      label: S.of(context).navigation_home,
                       icon: AssetsSvgs.navHomeSvg,
                     ),
                     NavigationItemModel(
-                      label: '购物车',
+                      label: S.of(context).navigation_cart,
                       icon: AssetsSvgs.navCartSvg,
                       // 购物车数量
                       // count: CartService.to.lineItemsCount,
@@ -50,7 +51,7 @@ class MainPage extends GetView<MainController> {
                     //   count: 1,
                     // ),
                     NavigationItemModel(
-                      label: '我的',
+                      label: S.of(context).navigation_profile,
                       icon: AssetsSvgs.navProfileSvg,
                     ),
                   ],

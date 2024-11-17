@@ -2,5 +2,8 @@
     "en": "英语",
     "zh": "中文",
     "lang_en": "英语",
-    "lang_zh": "中文"
+    "lang_zh": "中文",
+    "navigation_home": "主页",
+    "navigation_cart": "购物车",
+    "navigation_profile": "我的"
 }

@@ -25,6 +25,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "en": MessageLookupByLibrary.simpleMessage("英语"),
         "lang_en": MessageLookupByLibrary.simpleMessage("英语"),
         "lang_zh": MessageLookupByLibrary.simpleMessage("中文"),
+        "navigation_cart": MessageLookupByLibrary.simpleMessage("购物车"),
+        "navigation_home": MessageLookupByLibrary.simpleMessage("主页"),
+        "navigation_profile": MessageLookupByLibrary.simpleMessage("我的"),
         "zh": MessageLookupByLibrary.simpleMessage("中文")
       };
 }

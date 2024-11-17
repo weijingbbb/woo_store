@@ -89,6 +89,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Home`
+  String get navigation_home {
+    return Intl.message(
+      'Home',
+      name: 'navigation_home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cart`
+  String get navigation_cart {
+    return Intl.message(
+      'Cart',
+      name: 'navigation_cart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get navigation_profile {
+    return Intl.message(
+      'Profile',
+      name: 'navigation_profile',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:woo_store/generated/l10n.dart';
 import 'package:woo_store/routes/index.dart';
 import 'package:woo_store/services/index.dart';
 import 'package:woo_store/utils/index.dart';
@@ -11,6 +13,19 @@ class HomePage extends GetView<HomeController> {
 
   // 主视图
   Widget _buildView() {
+    List<Locale> list = S.delegate.supportedLocales;
+    List<Widget> widgets = [];
+    for (var el in list) {
+      widgets.add(ListTile(
+        title: Text(el.languageCode),
+        trailing: CupertinoSwitch(
+            value: el.languageCode == LanguageService.to.locale.languageCode,
+            onChanged: (_) {
+              LanguageService.to.setLanguage(el);
+            }),
+      ));
+    }
+
     return Center(
       child: Column(
         children: [
@@ -22,7 +37,9 @@ class HomePage extends GetView<HomeController> {
               Routes.clearHistory();
             },
             child: const Text('退出登录'),
-          )
+          ),
+          const SizedBox(height: 20),
+          ...widgets,
         ],
       ),
     );
