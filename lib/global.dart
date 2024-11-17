@@ -19,6 +19,8 @@ class Global {
       Get.put<LanguageService>(LanguageService());
       // 主题服务
       Get.put<ThemeService>(ThemeService());
+      // 网络服务
+      Get.put<NetworkService>(NetworkService());
     });
   }
 }

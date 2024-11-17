@@ -69,7 +69,15 @@ class HomePage extends GetView<HomeController> {
             width: 100,
             height: 40,
             color: Theme.of(context).colorScheme.tertiary,
-          )
+          ),
+          OutlinedButton(
+            onPressed: () {
+              Console.log(
+                  'controller------- ${UserService.to.profile.toJson()}');
+            },
+            child: const Text('查看用户信息'),
+          ),
+          
         ],
       ),
     );

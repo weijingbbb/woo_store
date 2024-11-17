@@ -1,6 +1,9 @@
+import 'dart:convert';
+
 import 'package:get/get.dart';
+import 'package:woo_store/apis/index.dart';
 import 'package:woo_store/models/index.dart';
-import 'package:woo_store/routes/index.dart';
+import 'package:woo_store/utils/index.dart';
 import 'package:woo_store/values/index.dart';
 
 import 'storage.dart';
@@ -15,7 +18,7 @@ class UserService extends GetxController {
   String token = '';
 
   // 用户的资料
-  final _profile = UserProfileModel();
+  UserProfileModel _profile = UserProfileModel();
 
   /// 是否登录
   bool get isLogin => _isLogin;
@@ -26,35 +29,56 @@ class UserService extends GetxController {
   /// 用户的资料
   UserProfileModel get profile => _profile;
 
-  // 获取用户资料
-  void getProfile() {
+
+  /// 获取用户 profile
+  Future<void> getProfile() async {
+    if (token.isEmpty) return;
+    UserProfileModel result = await UserApi.profile();
+    
     // 如果数据获取成功，更新数据，更新_isLogin
-    saveLoginStatus(true);
+    await setProfile(result);
   }
 
   // 设置用户资料
-  void setProfile([UserProfileModel? profile]) {
-    // _profile.assign(profile);
+  Future<void> setProfile(UserProfileModel newProfile) async {
+    _profile = newProfile;
     saveLoginStatus(true);
+    Console.log('用户资料: ${_profile.toJson()}');
+    StorageService.to
+        .setString(Constants.storageProfile, jsonEncode(newProfile));
   }
 
   // 清除用户资料 - 退出登录
-  void clearProfile() {
+  void logout() {
     saveLoginStatus(false);
   }
 
+  // 保存用户的token
+  Future<void> saveToken(String newToken) async {
+    token = newToken;
+    // 存储token
+    await StorageService.to.setString(Constants.storageToken, token);
+  }
+
   // 保存登录状态到存储
-  void saveLoginStatus(bool status) {
+  Future<void> saveLoginStatus(bool status) async {
     _isLogin = status;
     // 存储登录状态
-    StorageService.to.setBool(Constants.storageIsLogin, status);
-    Routes.refresh.value = !Routes.refresh.value;
+    await StorageService.to.setBool(Constants.storageIsLogin, status);
+    // 刷新路由
+    // Routes.refresh.value = !Routes.refresh.value;
+    // await Future.delayed(const Duration(microseconds: 0));
   }
+
+  
 
   @override
   void onInit() {
-    // 初始化时，读取存储中的登录状态
+    // 初始化时，读取存储中的登录状态、token
     _isLogin = StorageService.to.getBool(Constants.storageIsLogin);
+    token = StorageService.to.getString(Constants.storageToken);
+    _profile = UserProfileModel.fromJson(
+        jsonDecode(StorageService.to.getString(Constants.storageProfile)));
     super.onInit();
   }
 }

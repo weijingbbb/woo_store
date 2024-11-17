@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:go_router/go_router.dart';
-import 'package:woo_store/routes/index.dart';
-import 'package:woo_store/services/index.dart';
 import 'package:woo_store/utils/index.dart';
 
 import 'index.dart';
@@ -22,9 +19,9 @@ class LoginPage extends GetView<LoginController> {
             child: Center(
                 child: OutlinedButton(
               onPressed: () {
-                Console.log("点击了登录按钮,登录成功");
-                UserService.to.saveLoginStatus(true);
-                context.goNamed(RouteNames.systemMain);
+                controller.onSignIn();
+                // UserService.to.saveLoginStatus(true);
+                // context.goNamed(RouteNames.systemMain);
                 // 登录成功后跳转到首页
                 // 如果有历史记录，则跳转到历史记录的上一页，否则跳转到首页
                 // final prev = Routes.history[Routes.history.length - 2];

@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 import 'package:woo_store/pages/index.dart';
 import 'package:woo_store/services/index.dart';
-import 'package:woo_store/utils/index.dart';
 
 import 'names.dart';
 import 'observers.dart';
@@ -93,7 +92,7 @@ abstract class _RouteRedirect {
   }
 
   static String? isLoginPage(BuildContext context, GoRouterState state) {
-    Console.log('isLoginPage------------${UserService.to.isLogin}');
+    // Console.log('isLoginPage------------${UserService.to.isLogin}');
     // 如果已经登录，就跳转到首页
     if (UserService.to.isLogin) {
       return RouteNames.systemMain;
