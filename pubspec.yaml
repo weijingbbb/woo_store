@@ -41,7 +41,12 @@ dependencies:
   validatorless: ^1.2.3
   # 日志 - 美化打印
   logger: ^2.4.0
+  # 上滑下拉刷新
   pull_to_refresh_flutter3: ^2.0.2
+  # svg 图片
+  flutter_svg: ^2.0.14
+  # 图片缓存
+  cached_network_image: ^3.4.1
 
 dev_dependencies:
   flutter_test:
@@ -61,6 +66,9 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/svgs/
   
 # 在终端运行下面的命令,将会生产app的图标
 # app 图标  dart run icons_launcher:create

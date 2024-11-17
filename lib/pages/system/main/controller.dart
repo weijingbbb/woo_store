@@ -1,27 +1,28 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:woo_store/utils/index.dart';
 
 class MainController extends GetxController {
   MainController();
 
-  _initData() {
-    update(["main"]);
+  late final PageController pageController;
+  int currentPage = 0;
+
+  void changePage(int page) {
+    Console.log(page);
+    currentPage = page;
+    update(['navigation']);
   }
-
-  void onTap() {}
-
-  // @override
-  // void onInit() {
-  //   super.onInit();
-  // }
 
   @override
-  void onReady() {
-    super.onReady();
-    _initData();
+  void onInit() {
+    super.onInit();
+    pageController = PageController(initialPage: currentPage);
   }
 
-  // @override
-  // void onClose() {
-  //   super.onClose();
-  // }
+  @override
+  void onClose() {
+    pageController.dispose();
+    super.onClose();
+  }
 }
