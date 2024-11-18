@@ -54,11 +54,29 @@ abstract class Routes {
   static final config = GoRouter(
     navigatorKey: GlobalKey<NavigatorState>(),
     observers: [observer],
-    initialLocation: RouteNames.systemMain,
+    initialLocation: RouteNames.systemSplash,
     redirect: _RouteRedirect.auth,
     refreshListenable: refresh,
     routes: [
       ...tarbarPage,
+      GoRoute(
+        path: RouteNames.systemSplash,
+        name: RouteNames.systemSplash,
+        pageBuilder: (context, state) => CupertinoPage(
+          name: state.uri.toString(),
+          key: state.pageKey,
+          child: const SplashPage(),
+        ),
+      ),
+      GoRoute(
+        path: RouteNames.systemWelcome,
+        name: RouteNames.systemWelcome,
+        pageBuilder: (context, state) => CupertinoPage(
+          name: state.uri.toString(),
+          key: state.pageKey,
+          child: const WelcomePage(),
+        ),
+      ),
       GoRoute(
         path: RouteNames.systemMain,
         name: RouteNames.systemMain,

@@ -5,6 +5,7 @@ class RouteNames {
   static const systemMain = '/system_main'; // 系统金刚页
   static const systemHome = '/system_home'; // 系统主页
   static const systemSplash = '/system_splash'; // 系统启动页
+  static const systemWelcome = '/system_welcome'; // 系统欢迎页
   static const systemLogin = '/system_login'; // 登录页
   static const systemRegister = '/register'; // 注册页
   static const systemRegisterPin = '/register_pin'; // 注册页 - 验证码
@@ -16,6 +17,7 @@ class RouteNames {
   static final noAuthPaths = [
     systemMain,
     systemSplash,
+    systemWelcome,
     systemLogin,
     systemHome,
     systemRegister,
