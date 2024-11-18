@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
+import 'package:woo_store/models/index.dart';
 import 'package:woo_store/pages/index.dart';
 import 'package:woo_store/services/index.dart';
+import 'package:woo_store/utils/index.dart';
 
 import 'names.dart';
 import 'observers.dart';
@@ -76,6 +78,28 @@ abstract class Routes {
         ),
         redirect: _RouteRedirect.isLoginPage,
       ),
+      GoRoute(
+        path: RouteNames.systemRegister,
+        name: RouteNames.systemRegister,
+        pageBuilder: (context, state) => CupertinoPage(
+          name: state.uri.toString(),
+          key: state.pageKey,
+          child: const RegisterPage(),
+        ),
+      ),
+      GoRoute(
+          path: RouteNames.systemRegisterPin,
+          name: RouteNames.systemRegisterPin,
+          pageBuilder: (context, state) {
+            final req = state.extra;
+            Console.log('req-------:$req');
+            return CupertinoPage(
+                name: state.uri.toString(),
+                key: state.pageKey,
+                child: RegisterPinPage(
+                  singupReq: state.extra as UserRegisterReq,
+                ));
+          }),
     ],
   );
 }
@@ -83,6 +107,7 @@ abstract class Routes {
 abstract class _RouteRedirect {
   static String? auth(BuildContext context, GoRouterState state) {
     final to = state.uri.toString();
+    Console.log('登录鉴权：$to,---${RouteNames.noAuthPaths.contains(to)}');
     if (RouteNames.noAuthPaths.contains(to)) {
       return null;
     }

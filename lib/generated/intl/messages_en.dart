@@ -22,12 +22,62 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "back": MessageLookupByLibrary.simpleMessage("Back"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "email_iput_label": MessageLookupByLibrary.simpleMessage("Email"),
         "en": MessageLookupByLibrary.simpleMessage("English"),
+        "first_name_iput_label":
+            MessageLookupByLibrary.simpleMessage("First Name"),
         "lang_en": MessageLookupByLibrary.simpleMessage("English"),
         "lang_zh": MessageLookupByLibrary.simpleMessage("Chinese"),
+        "last_name_iput_label":
+            MessageLookupByLibrary.simpleMessage("Last Name"),
+        "loading": MessageLookupByLibrary.simpleMessage("Loading..."),
+        "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "login_button": MessageLookupByLibrary.simpleMessage("Sign In"),
+        "login_page_forgot_password":
+            MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+        "login_page_sign_up": MessageLookupByLibrary.simpleMessage("Sign Up"),
+        "login_page_title":
+            MessageLookupByLibrary.simpleMessage("Welcome to login!"),
         "navigation_cart": MessageLookupByLibrary.simpleMessage("Cart"),
         "navigation_home": MessageLookupByLibrary.simpleMessage("Home"),
         "navigation_profile": MessageLookupByLibrary.simpleMessage("Profile"),
+        "next": MessageLookupByLibrary.simpleMessage("Next"),
+        "no_data": MessageLookupByLibrary.simpleMessage("No Data"),
+        "no_more_data": MessageLookupByLibrary.simpleMessage("No More Data"),
+        "password_iput_label": MessageLookupByLibrary.simpleMessage("Password"),
+        "register_pin_appbar_title":
+            MessageLookupByLibrary.simpleMessage("Register Pin"),
+        "register_pin_error":
+            MessageLookupByLibrary.simpleMessage("Pin is incorrect."),
+        "register_pin_fail":
+            MessageLookupByLibrary.simpleMessage("Fail To Register"),
+        "register_pin_page_tips": MessageLookupByLibrary.simpleMessage(
+            "we will send you a Pin to continue your account."),
+        "register_pin_page_title":
+            MessageLookupByLibrary.simpleMessage("Verification"),
+        "register_pin_success":
+            MessageLookupByLibrary.simpleMessage("Registered Successfully"),
+        "signup": MessageLookupByLibrary.simpleMessage("Sign Up"),
+        "signup_button": MessageLookupByLibrary.simpleMessage("Sign Up"),
+        "signup_page_tips":
+            MessageLookupByLibrary.simpleMessage("Already have an account?"),
+        "signup_page_title":
+            MessageLookupByLibrary.simpleMessage("Welcome to sign up!"),
+        "submit": MessageLookupByLibrary.simpleMessage("Submit"),
+        "username_iput_label":
+            MessageLookupByLibrary.simpleMessage("User Name"),
+        "validator_email": MessageLookupByLibrary.simpleMessage(
+            "email must be a valid email address."),
+        "validator_length": MessageLookupByLibrary.simpleMessage(
+            "must have between 3 and 18 digits."),
+        "validator_password": MessageLookupByLibrary.simpleMessage(
+            "password must have between 6 and 18 digits."),
+        "validator_required":
+            MessageLookupByLibrary.simpleMessage("This field is required."),
+        "validator_username": MessageLookupByLibrary.simpleMessage(
+            "username must have between 6 and 18 digits."),
         "zh": MessageLookupByLibrary.simpleMessage("Chinese")
       };
 }

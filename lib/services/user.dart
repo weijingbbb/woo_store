@@ -29,12 +29,11 @@ class UserService extends GetxController {
   /// 用户的资料
   UserProfileModel get profile => _profile;
 
-
   /// 获取用户 profile
   Future<void> getProfile() async {
     if (_token.isEmpty) return;
     UserProfileModel result = await UserApi.profile();
-    
+
     // 如果数据获取成功，更新数据，更新_isLogin
     await setProfile(result);
   }
@@ -70,15 +69,16 @@ class UserService extends GetxController {
     // await Future.delayed(const Duration(microseconds: 0));
   }
 
-  
-
   @override
   void onInit() {
     // 初始化时，读取存储中的登录状态、token
     _isLogin = StorageService.to.getBool(Constants.storageIsLogin);
     _token = StorageService.to.getString(Constants.storageToken);
-    _profile = UserProfileModel.fromJson(
-        jsonDecode(StorageService.to.getString(Constants.storageProfile)));
+    var profileOffline = StorageService.to.getString(Constants.storageProfile);
+    if (profileOffline.isNotEmpty) {
+      _profile = UserProfileModel.fromJson(jsonDecode(profileOffline));
+    }
+
     super.onInit();
   }
 }

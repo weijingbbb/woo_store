@@ -5,5 +5,48 @@
     "lang_zh": "Chinese",
     "navigation_home": "Home",
     "navigation_cart": "Cart",
-    "navigation_profile": "Profile"
+    "navigation_profile": "Profile",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next",
+    "loading": "Loading...",
+    "no_data": "No Data",
+    "no_more_data": "No More Data",
+
+    "login": "Login",
+    "login_page_title": "Welcome to login!",
+    "login_page_forgot_password": "Forgot Password?",
+    "login_page_sign_up": "Sign Up",
+    "login_button": "Sign In",
+
+    "signup": "Sign Up",
+    "signup_page_title": "Welcome to sign up!",
+    "signup_button": "Sign Up",
+    "signup_page_tips": "Already have an account?",
+
+
+    "username_iput_label": "User Name",
+    "password_iput_label": "Password",
+    "email_iput_label": "Email",
+    "first_name_iput_label": "First Name",
+    "last_name_iput_label": "Last Name",
+
+    "register_pin_appbar_title": "Register Pin",
+    "register_pin_page_title": "Verification",
+    "register_pin_page_tips": "we will send you a Pin to continue your account.",
+    "register_pin_error": "Pin is incorrect.",
+    "register_pin_success": "Registered Successfully",
+    "register_pin_fail": "Fail To Register",
+
+    
+
+    "validator_required": "This field is required.",
+    "validator_username": "username must have between 6 and 18 digits.",
+    "validator_password": "password must have between 6 and 18 digits.",
+    "validator_email": "email must be a valid email address.",
+    "validator_length": "must have between 3 and 18 digits."
+
+
+
 }

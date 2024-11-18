@@ -119,6 +119,326 @@ class S {
       args: [],
     );
   }
+
+  /// `Submit`
+  String get submit {
+    return Intl.message(
+      'Submit',
+      name: 'submit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel`
+  String get cancel {
+    return Intl.message(
+      'Cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Back`
+  String get back {
+    return Intl.message(
+      'Back',
+      name: 'back',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Next`
+  String get next {
+    return Intl.message(
+      'Next',
+      name: 'next',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Loading...`
+  String get loading {
+    return Intl.message(
+      'Loading...',
+      name: 'loading',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No Data`
+  String get no_data {
+    return Intl.message(
+      'No Data',
+      name: 'no_data',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No More Data`
+  String get no_more_data {
+    return Intl.message(
+      'No More Data',
+      name: 'no_more_data',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get login {
+    return Intl.message(
+      'Login',
+      name: 'login',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome to login!`
+  String get login_page_title {
+    return Intl.message(
+      'Welcome to login!',
+      name: 'login_page_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forgot Password?`
+  String get login_page_forgot_password {
+    return Intl.message(
+      'Forgot Password?',
+      name: 'login_page_forgot_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Up`
+  String get login_page_sign_up {
+    return Intl.message(
+      'Sign Up',
+      name: 'login_page_sign_up',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign In`
+  String get login_button {
+    return Intl.message(
+      'Sign In',
+      name: 'login_button',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Up`
+  String get signup {
+    return Intl.message(
+      'Sign Up',
+      name: 'signup',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome to sign up!`
+  String get signup_page_title {
+    return Intl.message(
+      'Welcome to sign up!',
+      name: 'signup_page_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Up`
+  String get signup_button {
+    return Intl.message(
+      'Sign Up',
+      name: 'signup_button',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already have an account?`
+  String get signup_page_tips {
+    return Intl.message(
+      'Already have an account?',
+      name: 'signup_page_tips',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `User Name`
+  String get username_iput_label {
+    return Intl.message(
+      'User Name',
+      name: 'username_iput_label',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get password_iput_label {
+    return Intl.message(
+      'Password',
+      name: 'password_iput_label',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get email_iput_label {
+    return Intl.message(
+      'Email',
+      name: 'email_iput_label',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `First Name`
+  String get first_name_iput_label {
+    return Intl.message(
+      'First Name',
+      name: 'first_name_iput_label',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Last Name`
+  String get last_name_iput_label {
+    return Intl.message(
+      'Last Name',
+      name: 'last_name_iput_label',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Register Pin`
+  String get register_pin_appbar_title {
+    return Intl.message(
+      'Register Pin',
+      name: 'register_pin_appbar_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Verification`
+  String get register_pin_page_title {
+    return Intl.message(
+      'Verification',
+      name: 'register_pin_page_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `we will send you a Pin to continue your account.`
+  String get register_pin_page_tips {
+    return Intl.message(
+      'we will send you a Pin to continue your account.',
+      name: 'register_pin_page_tips',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pin is incorrect.`
+  String get register_pin_error {
+    return Intl.message(
+      'Pin is incorrect.',
+      name: 'register_pin_error',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Registered Successfully`
+  String get register_pin_success {
+    return Intl.message(
+      'Registered Successfully',
+      name: 'register_pin_success',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fail To Register`
+  String get register_pin_fail {
+    return Intl.message(
+      'Fail To Register',
+      name: 'register_pin_fail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This field is required.`
+  String get validator_required {
+    return Intl.message(
+      'This field is required.',
+      name: 'validator_required',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `username must have between 6 and 18 digits.`
+  String get validator_username {
+    return Intl.message(
+      'username must have between 6 and 18 digits.',
+      name: 'validator_username',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `password must have between 6 and 18 digits.`
+  String get validator_password {
+    return Intl.message(
+      'password must have between 6 and 18 digits.',
+      name: 'validator_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `email must be a valid email address.`
+  String get validator_email {
+    return Intl.message(
+      'email must be a valid email address.',
+      name: 'validator_email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `must have between 3 and 18 digits.`
+  String get validator_length {
+    return Intl.message(
+      'must have between 3 and 18 digits.',
+      name: 'validator_length',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -6,6 +6,8 @@ class RouteNames {
   static const systemHome = '/system_home'; // 系统主页
   static const systemSplash = '/system_splash'; // 系统启动页
   static const systemLogin = '/system_login'; // 登录页
+  static const systemRegister = '/register'; // 注册页
+  static const systemRegisterPin = '/register_pin'; // 注册页 - 验证码
 
   static const cartIndex = '/cart_index'; // 购物车页
   static const myIndex = '/my_index'; // 个人中心页
@@ -15,6 +17,8 @@ class RouteNames {
     systemMain,
     systemSplash,
     systemLogin,
-    systemHome
+    systemHome,
+    systemRegister,
+    systemRegisterPin,
   ];
 }

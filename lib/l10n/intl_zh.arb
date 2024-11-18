@@ -5,5 +5,44 @@
     "lang_zh": "中文",
     "navigation_home": "主页",
     "navigation_cart": "购物车",
-    "navigation_profile": "我的"
+    "navigation_profile": "我的",
+    "submit": "提交",
+    "cancel": "取消",
+    "back": "返回",
+    "next": "下一步",
+    "loading": "加载中...",
+    "no_data": "暂无数据",
+    "no_more_data": "没有更多数据了",
+
+    "login": "登录",
+    "login_page_title": "欢迎登录！",
+    "login_page_forgot_password": "忘记密码？",
+    "login_page_sign_up": "注册",
+    "login_button": "登录",
+
+    "signup": "注册",
+    "signup_page_title": "欢迎注册！",
+    "signup_button": "注册",
+    "signup_page_tips": "已经有账户了？",
+
+
+    "username_iput_label": "用户名",
+    "password_iput_label": "密码",
+    "email_iput_label": "邮箱",
+    "first_name_iput_label": "姓",
+    "last_name_iput_label": "名",
+
+    "register_pin_appbar_title": "注册",
+    "register_pin_page_title": "验证码",
+    "register_pin_page_tips": "我们将会发送验证码到你的邮箱进行验证。",
+    "register_pin_error": "验证码错误",
+    "register_pin_success": "注册成功",
+    "register_pin_fail": "注册失败",
+
+
+    "validator_required": "不能为空",
+    "validator_username": "用户名必须在6 ~ 18位之间",
+    "validator_password": "密码长度必须在6 ~ 18位之间",
+    "validator_email": "邮箱格式不正确",
+    "validator_length": "字符长度必须在3 ~ 18位之间"
 }
