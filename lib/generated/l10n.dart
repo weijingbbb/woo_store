@@ -529,6 +529,106 @@ class S {
       args: [],
     );
   }
+
+  /// `喜欢`
+  String get my_page_likes {
+    return Intl.message(
+      '喜欢',
+      name: 'my_page_likes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `收藏夹`
+  String get my_page_favorites {
+    return Intl.message(
+      '收藏夹',
+      name: 'my_page_favorites',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `收据`
+  String get my_page_receipt {
+    return Intl.message(
+      '收据',
+      name: 'my_page_receipt',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `订单`
+  String get my_page_orders {
+    return Intl.message(
+      '订单',
+      name: 'my_page_orders',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `个人资料`
+  String get my_page_personal_data {
+    return Intl.message(
+      '个人资料',
+      name: 'my_page_personal_data',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `发票地址`
+  String get my_page_invoice_address {
+    return Intl.message(
+      '发票地址',
+      name: 'my_page_invoice_address',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `收货地址`
+  String get my_page_shipping_address {
+    return Intl.message(
+      '收货地址',
+      name: 'my_page_shipping_address',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `语言`
+  String get my_page_language {
+    return Intl.message(
+      '语言',
+      name: 'my_page_language',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `主题`
+  String get my_page_theme {
+    return Intl.message(
+      '主题',
+      name: 'my_page_theme',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `注销`
+  String get my_page_logout {
+    return Intl.message(
+      '注销',
+      name: 'my_page_logout',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

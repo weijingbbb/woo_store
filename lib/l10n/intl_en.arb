@@ -55,6 +55,16 @@
     "welcomeTwoTitle": "Complete your shopping",
     "welcomeTwoDesc": "Contrary to popular belief, Lorem Ipsum is not simply random text",
     "welcomeThreeTitle": "Get product at your door",
-    "welcomeThreeDesc": "Contrary to popular belief, Lorem Ipsum is not simply random text"
+    "welcomeThreeDesc": "Contrary to popular belief, Lorem Ipsum is not simply random text",
 
+    "my_page_likes": "喜欢",
+    "my_page_favorites": "收藏夹",
+    "my_page_receipt": "收据",
+    "my_page_orders": "订单",
+    "my_page_personal_data": "个人资料",
+    "my_page_invoice_address": "发票地址",
+    "my_page_shipping_address": "收货地址",
+    "my_page_language": "语言",
+    "my_page_theme": "主题",
+    "my_page_logout": "注销"
 }

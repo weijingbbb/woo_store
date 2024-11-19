@@ -21,6 +21,8 @@ class Global {
       Get.put<ThemeService>(ThemeService());
       // 网络服务
       Get.put<NetworkService>(NetworkService());
+
+      
     });
   }
 }

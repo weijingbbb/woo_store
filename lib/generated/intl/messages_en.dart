@@ -41,6 +41,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "login_page_sign_up": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "login_page_title":
             MessageLookupByLibrary.simpleMessage("Welcome to login!"),
+        "my_page_favorites": MessageLookupByLibrary.simpleMessage("收藏夹"),
+        "my_page_invoice_address": MessageLookupByLibrary.simpleMessage("发票地址"),
+        "my_page_language": MessageLookupByLibrary.simpleMessage("语言"),
+        "my_page_likes": MessageLookupByLibrary.simpleMessage("喜欢"),
+        "my_page_logout": MessageLookupByLibrary.simpleMessage("注销"),
+        "my_page_orders": MessageLookupByLibrary.simpleMessage("订单"),
+        "my_page_personal_data": MessageLookupByLibrary.simpleMessage("个人资料"),
+        "my_page_receipt": MessageLookupByLibrary.simpleMessage("收据"),
+        "my_page_shipping_address":
+            MessageLookupByLibrary.simpleMessage("收货地址"),
+        "my_page_theme": MessageLookupByLibrary.simpleMessage("主题"),
         "navigation_cart": MessageLookupByLibrary.simpleMessage("Cart"),
         "navigation_home": MessageLookupByLibrary.simpleMessage("Home"),
         "navigation_profile": MessageLookupByLibrary.simpleMessage("Profile"),
