@@ -689,6 +689,136 @@ class S {
       args: [],
     );
   }
+
+  /// `order list`
+  String get order_list_page_title {
+    return Intl.message(
+      'order list',
+      name: 'order_list_page_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `order detail`
+  String get order_detail_page_title {
+    return Intl.message(
+      'order detail',
+      name: 'order_detail_page_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `order id`
+  String get order_detail_page_orderid {
+    return Intl.message(
+      'order id',
+      name: 'order_detail_page_orderid',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `start address`
+  String get order_detail_page_start_address {
+    return Intl.message(
+      'start address',
+      name: 'order_detail_page_start_address',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `end address`
+  String get order_detail_page_end_address {
+    return Intl.message(
+      'end address',
+      name: 'order_detail_page_end_address',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `product`
+  String get order_detail_page_product {
+    return Intl.message(
+      'product',
+      name: 'order_detail_page_product',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `price & num`
+  String get order_detail_page_price_num {
+    return Intl.message(
+      'price & num',
+      name: 'order_detail_page_price_num',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `subtotal`
+  String get order_detail_page_subtotal {
+    return Intl.message(
+      'subtotal',
+      name: 'order_detail_page_subtotal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `pay method`
+  String get order_detail_page_pay_method {
+    return Intl.message(
+      'pay method',
+      name: 'order_detail_page_pay_method',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `settle accounts`
+  String get order_detail_settle_accounts {
+    return Intl.message(
+      'settle accounts',
+      name: 'order_detail_settle_accounts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `total`
+  String get order_detail_page_total {
+    return Intl.message(
+      'total',
+      name: 'order_detail_page_total',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `freight`
+  String get order_detail_page_freight {
+    return Intl.message(
+      'freight',
+      name: 'order_detail_page_freight',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `discount`
+  String get order_detail_page_discount {
+    return Intl.message(
+      'discount',
+      name: 'order_detail_page_discount',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

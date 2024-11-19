@@ -73,5 +73,20 @@
     "theme_page_system": "system",
     "theme_page_light": "light",
     "theme_page_dark": "dark",
-    "language_page_title": "setting language"
+    "language_page_title": "setting language",
+
+    "order_list_page_title": "order list",
+    "order_detail_page_title": "order detail",
+    "order_detail_page_orderid": "order id",
+    "order_detail_page_start_address": "start address",
+    "order_detail_page_end_address": "end address",
+    "order_detail_page_product": "product",
+    "order_detail_page_price_num": "price & num",
+    "order_detail_page_subtotal": "subtotal",
+
+    "order_detail_page_pay_method": "pay method",
+    "order_detail_settle_accounts": "settle accounts",
+    "order_detail_page_total": "total",
+    "order_detail_page_freight": "freight",
+    "order_detail_page_discount": "discount"
 }

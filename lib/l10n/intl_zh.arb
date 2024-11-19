@@ -72,6 +72,23 @@
     "theme_page_system": "根据系统",
     "theme_page_light": "亮色",
     "theme_page_dark": "暗黑",
-    "language_page_title": "设置语言"
+    "language_page_title": "设置语言",
+
+    "order_list_page_title": "订单列表",
+    "order_detail_page_title": "订单详情",
+    "order_detail_page_orderid": "订单 ID",
+    "order_detail_page_start_address": "始发地",
+    "order_detail_page_end_address": "目的地",
+    "order_detail_page_product": "商品",
+    "order_detail_page_price_num": "单价 & 数量",
+    "order_detail_page_subtotal": "小计",
+    "order_detail_page_pay_method": "支付方式",
+    "order_detail_settle_accounts": "结算",
+    "order_detail_page_total": "合计",
+    "order_detail_page_freight": "运费",
+    "order_detail_page_discount": "折扣"
+
+
+
 
 }

@@ -14,6 +14,8 @@ class RouteNames {
   static const myIndex = '/my_index'; // 个人中心页
   static const myTheme = '/my_theme'; // 个人资料页
   static const myLanguage = '/my_language'; // 语言设置页
+  static const myOrderList = '/my_order_list'; // 订单列表页
+  static const myOrderDetail = '/my_order_detail'; // 订单详情页
 
   // 不需要登录的路径
   static final noAuthPaths = [

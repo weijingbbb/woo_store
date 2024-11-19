@@ -54,7 +54,7 @@ abstract class Routes {
   static final config = GoRouter(
     navigatorKey: GlobalKey<NavigatorState>(),
     observers: [observer],
-    initialLocation: RouteNames.systemSplash,
+    initialLocation: RouteNames.myOrderList,
     redirect: _RouteRedirect.auth,
     refreshListenable: refresh,
     routes: [
@@ -134,6 +134,24 @@ abstract class Routes {
           name: state.uri.toString(),
           key: state.pageKey,
           child: const LanguagePage(),
+        ),
+      ),
+      GoRoute(
+        path: RouteNames.myOrderList,
+        name: RouteNames.myOrderList,
+        pageBuilder: (context, state) => CupertinoPage(
+          name: state.uri.toString(),
+          key: state.pageKey,
+          child: const OrderListPage(),
+        ),
+      ),
+      GoRoute(
+        path: RouteNames.myOrderDetail,
+        name: RouteNames.myOrderDetail,
+        pageBuilder: (context, state) => CupertinoPage(
+          name: state.uri.toString(),
+          key: state.pageKey,
+          child: OrderDetailPage(order: state.extra as OrderModel),
         ),
       ),
     ],

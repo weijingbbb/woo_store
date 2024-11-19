@@ -64,6 +64,32 @@ class MessageLookup extends MessageLookupByLibrary {
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "no_data": MessageLookupByLibrary.simpleMessage("No Data"),
         "no_more_data": MessageLookupByLibrary.simpleMessage("No More Data"),
+        "order_detail_page_discount":
+            MessageLookupByLibrary.simpleMessage("discount"),
+        "order_detail_page_end_address":
+            MessageLookupByLibrary.simpleMessage("end address"),
+        "order_detail_page_freight":
+            MessageLookupByLibrary.simpleMessage("freight"),
+        "order_detail_page_orderid":
+            MessageLookupByLibrary.simpleMessage("order id"),
+        "order_detail_page_pay_method":
+            MessageLookupByLibrary.simpleMessage("pay method"),
+        "order_detail_page_price_num":
+            MessageLookupByLibrary.simpleMessage("price & num"),
+        "order_detail_page_product":
+            MessageLookupByLibrary.simpleMessage("product"),
+        "order_detail_page_start_address":
+            MessageLookupByLibrary.simpleMessage("start address"),
+        "order_detail_page_subtotal":
+            MessageLookupByLibrary.simpleMessage("subtotal"),
+        "order_detail_page_title":
+            MessageLookupByLibrary.simpleMessage("order detail"),
+        "order_detail_page_total":
+            MessageLookupByLibrary.simpleMessage("total"),
+        "order_detail_settle_accounts":
+            MessageLookupByLibrary.simpleMessage("settle accounts"),
+        "order_list_page_title":
+            MessageLookupByLibrary.simpleMessage("order list"),
         "password_iput_label": MessageLookupByLibrary.simpleMessage("Password"),
         "register_pin_appbar_title":
             MessageLookupByLibrary.simpleMessage("Register Pin"),

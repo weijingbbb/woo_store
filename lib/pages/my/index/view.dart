@@ -157,7 +157,10 @@ class MyIndexPage extends GetView<MyIndexController> {
       title: S.current.my_page_orders.tr,
       svgPath: AssetsSvgs.pDeliverySvg,
       color: context.colors.scheme.primary,
-      onTap: () => {Console.log("我的订单")},
+      onTap: () => {
+        // 跳转到订单列表页
+        context.pushNamed(RouteNames.myOrderList),
+      },
     ).height(70.h).elevation(2).paddingVertical(AppSpace.page).sliverBox;
   }
 

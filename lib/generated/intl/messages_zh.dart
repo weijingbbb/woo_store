@@ -57,6 +57,27 @@ class MessageLookup extends MessageLookupByLibrary {
         "next": MessageLookupByLibrary.simpleMessage("下一步"),
         "no_data": MessageLookupByLibrary.simpleMessage("暂无数据"),
         "no_more_data": MessageLookupByLibrary.simpleMessage("没有更多数据了"),
+        "order_detail_page_discount":
+            MessageLookupByLibrary.simpleMessage("折扣"),
+        "order_detail_page_end_address":
+            MessageLookupByLibrary.simpleMessage("目的地"),
+        "order_detail_page_freight": MessageLookupByLibrary.simpleMessage("运费"),
+        "order_detail_page_orderid":
+            MessageLookupByLibrary.simpleMessage("订单 ID"),
+        "order_detail_page_pay_method":
+            MessageLookupByLibrary.simpleMessage("支付方式"),
+        "order_detail_page_price_num":
+            MessageLookupByLibrary.simpleMessage("单价 & 数量"),
+        "order_detail_page_product": MessageLookupByLibrary.simpleMessage("商品"),
+        "order_detail_page_start_address":
+            MessageLookupByLibrary.simpleMessage("始发地"),
+        "order_detail_page_subtotal":
+            MessageLookupByLibrary.simpleMessage("小计"),
+        "order_detail_page_title": MessageLookupByLibrary.simpleMessage("订单详情"),
+        "order_detail_page_total": MessageLookupByLibrary.simpleMessage("合计"),
+        "order_detail_settle_accounts":
+            MessageLookupByLibrary.simpleMessage("结算"),
+        "order_list_page_title": MessageLookupByLibrary.simpleMessage("订单列表"),
         "password_iput_label": MessageLookupByLibrary.simpleMessage("密码"),
         "register_pin_appbar_title": MessageLookupByLibrary.simpleMessage("注册"),
         "register_pin_error": MessageLookupByLibrary.simpleMessage("验证码错误"),
