@@ -1,7 +1,9 @@
 import 'package:ducafe_ui_core/ducafe_ui_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 import 'package:woo_store/generated/l10n.dart';
+import 'package:woo_store/routes/index.dart';
 import 'package:woo_store/services/index.dart';
 import 'package:woo_store/style/index.dart';
 import 'package:woo_store/utils/index.dart';
@@ -188,14 +190,14 @@ class MyIndexPage extends GetView<MyIndexController> {
         title: S.current.my_page_language.tr,
         svgPath: AssetsSvgs.pTranslateSvg,
         color: "41AA3D".toColor,
-        onTap: () => {},
+        onTap: () => context.pushNamed(RouteNames.myLanguage),
       ),
       // 主题
       ButtonItemWidget(
         title: S.current.my_page_theme.tr,
         svgPath: AssetsSvgs.pThemeSvg,
         color: "F89C52".toColor,
-        onTap: () => {},
+        onTap: () => context.pushNamed(RouteNames.myTheme),
       ),
     ]
         .toColumnSpace()

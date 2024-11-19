@@ -65,5 +65,12 @@
     "my_page_shipping_address": "收货地址",
     "my_page_language": "语言",
     "my_page_theme": "主题",
-    "my_page_logout": "注销"
+    "my_page_logout": "注销",
+
+    "theme_page_title": "设置主题",
+    "theme_page_system": "根据系统",
+    "theme_page_light": "亮色",
+    "theme_page_dark": "暗黑",
+    "language_page_title": "设置语言"
+
 }

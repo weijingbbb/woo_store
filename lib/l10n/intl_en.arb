@@ -57,14 +57,20 @@
     "welcomeThreeTitle": "Get product at your door",
     "welcomeThreeDesc": "Contrary to popular belief, Lorem Ipsum is not simply random text",
 
-    "my_page_likes": "喜欢",
-    "my_page_favorites": "收藏夹",
-    "my_page_receipt": "收据",
-    "my_page_orders": "订单",
-    "my_page_personal_data": "个人资料",
-    "my_page_invoice_address": "发票地址",
-    "my_page_shipping_address": "收货地址",
-    "my_page_language": "语言",
-    "my_page_theme": "主题",
-    "my_page_logout": "注销"
+    "my_page_likes": "likes",
+    "my_page_favorites": "favorites",
+    "my_page_receipt": "receipt",
+    "my_page_orders": "orders",
+    "my_page_personal_data": "personal data",
+    "my_page_invoice_address": "invoice address",
+    "my_page_shipping_address": "shipping address",
+    "my_page_language": "language",
+    "my_page_theme": "theme",
+    "my_page_logout": "logout",
+
+    "theme_page_title": "setting theme",
+    "theme_page_system": "system",
+    "theme_page_light": "light",
+    "theme_page_dark": "dark",
+    "language_page_title": "setting language"
 }

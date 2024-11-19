@@ -43,6 +43,7 @@ class ThemeService extends GetxController {
     }
     AppTheme.mode = value;
     AppTheme.setSystemStyle();
+    // 更新配置，刷新根页面
     ConfigService.to.update();
   }
 

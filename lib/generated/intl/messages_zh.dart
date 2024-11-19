@@ -30,6 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "first_name_iput_label": MessageLookupByLibrary.simpleMessage("姓"),
         "lang_en": MessageLookupByLibrary.simpleMessage("英语"),
         "lang_zh": MessageLookupByLibrary.simpleMessage("中文"),
+        "language_page_title": MessageLookupByLibrary.simpleMessage("设置语言"),
         "last_name_iput_label": MessageLookupByLibrary.simpleMessage("名"),
         "loading": MessageLookupByLibrary.simpleMessage("加载中..."),
         "login": MessageLookupByLibrary.simpleMessage("登录"),
@@ -70,6 +71,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "skip": MessageLookupByLibrary.simpleMessage("跳过"),
         "start": MessageLookupByLibrary.simpleMessage("开始"),
         "submit": MessageLookupByLibrary.simpleMessage("提交"),
+        "theme_page_dark": MessageLookupByLibrary.simpleMessage("暗黑"),
+        "theme_page_light": MessageLookupByLibrary.simpleMessage("亮色"),
+        "theme_page_system": MessageLookupByLibrary.simpleMessage("根据系统"),
+        "theme_page_title": MessageLookupByLibrary.simpleMessage("设置主题"),
         "username_iput_label": MessageLookupByLibrary.simpleMessage("用户名"),
         "validator_email": MessageLookupByLibrary.simpleMessage("邮箱格式不正确"),
         "validator_length":

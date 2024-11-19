@@ -47,7 +47,9 @@ class MyApp extends StatelessWidget {
   }
 
   Widget _buildMaterialApp() {
-    return GetBuilder<ConfigService>(builder: (_) {
+    return GetBuilder<ConfigService>(
+        init: ConfigService(),
+        builder: (_) {
       return MaterialApp.router(
         debugShowCheckedModeBanner: false,
         title: 'Woo Store',

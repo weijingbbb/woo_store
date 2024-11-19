@@ -31,6 +31,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("First Name"),
         "lang_en": MessageLookupByLibrary.simpleMessage("English"),
         "lang_zh": MessageLookupByLibrary.simpleMessage("Chinese"),
+        "language_page_title":
+            MessageLookupByLibrary.simpleMessage("setting language"),
         "last_name_iput_label":
             MessageLookupByLibrary.simpleMessage("Last Name"),
         "loading": MessageLookupByLibrary.simpleMessage("Loading..."),
@@ -41,17 +43,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "login_page_sign_up": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "login_page_title":
             MessageLookupByLibrary.simpleMessage("Welcome to login!"),
-        "my_page_favorites": MessageLookupByLibrary.simpleMessage("收藏夹"),
-        "my_page_invoice_address": MessageLookupByLibrary.simpleMessage("发票地址"),
-        "my_page_language": MessageLookupByLibrary.simpleMessage("语言"),
-        "my_page_likes": MessageLookupByLibrary.simpleMessage("喜欢"),
-        "my_page_logout": MessageLookupByLibrary.simpleMessage("注销"),
-        "my_page_orders": MessageLookupByLibrary.simpleMessage("订单"),
-        "my_page_personal_data": MessageLookupByLibrary.simpleMessage("个人资料"),
-        "my_page_receipt": MessageLookupByLibrary.simpleMessage("收据"),
+        "my_page_favorites": MessageLookupByLibrary.simpleMessage("favorites"),
+        "my_page_invoice_address":
+            MessageLookupByLibrary.simpleMessage("invoice address"),
+        "my_page_language": MessageLookupByLibrary.simpleMessage("language"),
+        "my_page_likes": MessageLookupByLibrary.simpleMessage("likes"),
+        "my_page_logout": MessageLookupByLibrary.simpleMessage("logout"),
+        "my_page_orders": MessageLookupByLibrary.simpleMessage("orders"),
+        "my_page_personal_data":
+            MessageLookupByLibrary.simpleMessage("personal data"),
+        "my_page_receipt": MessageLookupByLibrary.simpleMessage("receipt"),
         "my_page_shipping_address":
-            MessageLookupByLibrary.simpleMessage("收货地址"),
-        "my_page_theme": MessageLookupByLibrary.simpleMessage("主题"),
+            MessageLookupByLibrary.simpleMessage("shipping address"),
+        "my_page_theme": MessageLookupByLibrary.simpleMessage("theme"),
         "navigation_cart": MessageLookupByLibrary.simpleMessage("Cart"),
         "navigation_home": MessageLookupByLibrary.simpleMessage("Home"),
         "navigation_profile": MessageLookupByLibrary.simpleMessage("Profile"),
@@ -80,6 +84,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
         "start": MessageLookupByLibrary.simpleMessage("Star"),
         "submit": MessageLookupByLibrary.simpleMessage("Submit"),
+        "theme_page_dark": MessageLookupByLibrary.simpleMessage("dark"),
+        "theme_page_light": MessageLookupByLibrary.simpleMessage("light"),
+        "theme_page_system": MessageLookupByLibrary.simpleMessage("system"),
+        "theme_page_title":
+            MessageLookupByLibrary.simpleMessage("setting theme"),
         "username_iput_label":
             MessageLookupByLibrary.simpleMessage("User Name"),
         "validator_email": MessageLookupByLibrary.simpleMessage(

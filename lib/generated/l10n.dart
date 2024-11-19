@@ -530,101 +530,151 @@ class S {
     );
   }
 
-  /// `喜欢`
+  /// `likes`
   String get my_page_likes {
     return Intl.message(
-      '喜欢',
+      'likes',
       name: 'my_page_likes',
       desc: '',
       args: [],
     );
   }
 
-  /// `收藏夹`
+  /// `favorites`
   String get my_page_favorites {
     return Intl.message(
-      '收藏夹',
+      'favorites',
       name: 'my_page_favorites',
       desc: '',
       args: [],
     );
   }
 
-  /// `收据`
+  /// `receipt`
   String get my_page_receipt {
     return Intl.message(
-      '收据',
+      'receipt',
       name: 'my_page_receipt',
       desc: '',
       args: [],
     );
   }
 
-  /// `订单`
+  /// `orders`
   String get my_page_orders {
     return Intl.message(
-      '订单',
+      'orders',
       name: 'my_page_orders',
       desc: '',
       args: [],
     );
   }
 
-  /// `个人资料`
+  /// `personal data`
   String get my_page_personal_data {
     return Intl.message(
-      '个人资料',
+      'personal data',
       name: 'my_page_personal_data',
       desc: '',
       args: [],
     );
   }
 
-  /// `发票地址`
+  /// `invoice address`
   String get my_page_invoice_address {
     return Intl.message(
-      '发票地址',
+      'invoice address',
       name: 'my_page_invoice_address',
       desc: '',
       args: [],
     );
   }
 
-  /// `收货地址`
+  /// `shipping address`
   String get my_page_shipping_address {
     return Intl.message(
-      '收货地址',
+      'shipping address',
       name: 'my_page_shipping_address',
       desc: '',
       args: [],
     );
   }
 
-  /// `语言`
+  /// `language`
   String get my_page_language {
     return Intl.message(
-      '语言',
+      'language',
       name: 'my_page_language',
       desc: '',
       args: [],
     );
   }
 
-  /// `主题`
+  /// `theme`
   String get my_page_theme {
     return Intl.message(
-      '主题',
+      'theme',
       name: 'my_page_theme',
       desc: '',
       args: [],
     );
   }
 
-  /// `注销`
+  /// `logout`
   String get my_page_logout {
     return Intl.message(
-      '注销',
+      'logout',
       name: 'my_page_logout',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `setting theme`
+  String get theme_page_title {
+    return Intl.message(
+      'setting theme',
+      name: 'theme_page_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `system`
+  String get theme_page_system {
+    return Intl.message(
+      'system',
+      name: 'theme_page_system',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `light`
+  String get theme_page_light {
+    return Intl.message(
+      'light',
+      name: 'theme_page_light',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `dark`
+  String get theme_page_dark {
+    return Intl.message(
+      'dark',
+      name: 'theme_page_dark',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `setting language`
+  String get language_page_title {
+    return Intl.message(
+      'setting language',
+      name: 'language_page_title',
       desc: '',
       args: [],
     );

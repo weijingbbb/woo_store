@@ -118,6 +118,24 @@ abstract class Routes {
                   singupReq: state.extra as UserRegisterReq,
                 ));
           }),
+      GoRoute(
+        path: RouteNames.myTheme,
+        name: RouteNames.myTheme,
+        pageBuilder: (context, state) => CupertinoPage(
+          name: state.uri.toString(),
+          key: state.pageKey,
+          child: const ThemePage(),
+        ),
+      ),
+      GoRoute(
+        path: RouteNames.myLanguage,
+        name: RouteNames.myLanguage,
+        pageBuilder: (context, state) => CupertinoPage(
+          name: state.uri.toString(),
+          key: state.pageKey,
+          child: const LanguagePage(),
+        ),
+      ),
     ],
   );
 }

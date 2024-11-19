@@ -41,30 +41,7 @@ class HomePage extends GetView<HomeController> {
           const SizedBox(height: 20),
           ...widgets,
 
-          ListTile(
-            title: const Text('根据系统'),
-            trailing: CupertinoSwitch(
-                value: controller.isSystem,
-                onChanged: (_) {
-                  controller.setThemeMode(ThemeMode.system);
-                }),
-          ),
-          ListTile(
-            title: const Text('亮色'),
-            trailing: CupertinoSwitch(
-                value: controller.isLight,
-                onChanged: (_) {
-                  controller.setThemeMode(ThemeMode.light);
-                }),
-          ),
-          ListTile(
-            title: const Text('暗黑'),
-            trailing: CupertinoSwitch(
-                value: controller.isDark,
-                onChanged: (_) {
-                  controller.setThemeMode(ThemeMode.dark);
-                }),
-          ),
+          
           Container(
             width: 100,
             height: 40,

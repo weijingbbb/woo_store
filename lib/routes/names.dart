@@ -12,6 +12,8 @@ class RouteNames {
 
   static const cartIndex = '/cart_index'; // 购物车页
   static const myIndex = '/my_index'; // 个人中心页
+  static const myTheme = '/my_theme'; // 个人资料页
+  static const myLanguage = '/my_language'; // 语言设置页
 
   // 不需要登录的路径
   static final noAuthPaths = [
