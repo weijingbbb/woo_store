@@ -630,6 +630,16 @@ class S {
     );
   }
 
+  /// `current version`
+  String get current_version {
+    return Intl.message(
+      'current version',
+      name: 'current_version',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `setting theme`
   String get theme_page_title {
     return Intl.message(

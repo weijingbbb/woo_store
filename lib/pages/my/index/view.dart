@@ -59,7 +59,7 @@ class MyIndexPage extends GetView<MyIndexController> {
         // 版本号
         if (version.isNotEmpty)
           TextWidget.label(
-            "当前版本号：v $version",
+            "${S.current.current_version.tr}：v $version",
           ).alignCenter().paddingBottom(200).sliverBox,
         // sliverBox 允许您在CustomScrollView中插入小部件
       ],

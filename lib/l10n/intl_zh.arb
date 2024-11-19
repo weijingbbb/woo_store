@@ -66,6 +66,7 @@
     "my_page_language": "语言",
     "my_page_theme": "主题",
     "my_page_logout": "注销",
+    "current_version": "当前版本号",
 
     "theme_page_title": "设置主题",
     "theme_page_system": "根据系统",

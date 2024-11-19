@@ -25,6 +25,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "back": MessageLookupByLibrary.simpleMessage("Back"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
+        "current_version":
+            MessageLookupByLibrary.simpleMessage("current version"),
         "email_iput_label": MessageLookupByLibrary.simpleMessage("Email"),
         "en": MessageLookupByLibrary.simpleMessage("English"),
         "first_name_iput_label":

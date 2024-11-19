@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "back": MessageLookupByLibrary.simpleMessage("返回"),
         "cancel": MessageLookupByLibrary.simpleMessage("取消"),
         "confirm": MessageLookupByLibrary.simpleMessage("确定"),
+        "current_version": MessageLookupByLibrary.simpleMessage("当前版本号"),
         "email_iput_label": MessageLookupByLibrary.simpleMessage("邮箱"),
         "en": MessageLookupByLibrary.simpleMessage("英语"),
         "first_name_iput_label": MessageLookupByLibrary.simpleMessage("姓"),

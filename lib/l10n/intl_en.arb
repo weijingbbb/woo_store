@@ -67,6 +67,7 @@
     "my_page_language": "language",
     "my_page_theme": "theme",
     "my_page_logout": "logout",
+    "current_version": "current version",
 
     "theme_page_title": "setting theme",
     "theme_page_system": "system",
