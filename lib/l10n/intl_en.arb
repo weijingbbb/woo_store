@@ -8,8 +8,11 @@
     "navigation_profile": "Profile",
     "submit": "Submit",
     "cancel": "Cancel",
+    "start": "Star",
+    "confirm": "Confirm",
     "back": "Back",
     "next": "Next",
+    "skip": "Skip",
     "loading": "Loading...",
     "no_data": "No Data",
     "no_more_data": "No More Data",
@@ -45,8 +48,13 @@
     "validator_username": "username must have between 6 and 18 digits.",
     "validator_password": "password must have between 6 and 18 digits.",
     "validator_email": "email must be a valid email address.",
-    "validator_length": "must have between 3 and 18 digits."
+    "validator_length": "must have between 3 and 18 digits.",
 
-
+    "welcomeOneTitle": "Choose Your Desire Product",
+    "welcomeOneDesc": "Contrary to popular belief, Lorem Ipsum is not simply random text",
+    "welcomeTwoTitle": "Complete your shopping",
+    "welcomeTwoDesc": "Contrary to popular belief, Lorem Ipsum is not simply random text",
+    "welcomeThreeTitle": "Get product at your door",
+    "welcomeThreeDesc": "Contrary to popular belief, Lorem Ipsum is not simply random text"
 
 }

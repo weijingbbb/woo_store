@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "back": MessageLookupByLibrary.simpleMessage("Back"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "email_iput_label": MessageLookupByLibrary.simpleMessage("Email"),
         "en": MessageLookupByLibrary.simpleMessage("English"),
         "first_name_iput_label":
@@ -65,6 +66,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Already have an account?"),
         "signup_page_title":
             MessageLookupByLibrary.simpleMessage("Welcome to sign up!"),
+        "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+        "start": MessageLookupByLibrary.simpleMessage("Star"),
         "submit": MessageLookupByLibrary.simpleMessage("Submit"),
         "username_iput_label":
             MessageLookupByLibrary.simpleMessage("User Name"),
@@ -78,6 +81,18 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("This field is required."),
         "validator_username": MessageLookupByLibrary.simpleMessage(
             "username must have between 6 and 18 digits."),
+        "welcomeOneDesc": MessageLookupByLibrary.simpleMessage(
+            "Contrary to popular belief, Lorem Ipsum is not simply random text"),
+        "welcomeOneTitle":
+            MessageLookupByLibrary.simpleMessage("Choose Your Desire Product"),
+        "welcomeThreeDesc": MessageLookupByLibrary.simpleMessage(
+            "Contrary to popular belief, Lorem Ipsum is not simply random text"),
+        "welcomeThreeTitle":
+            MessageLookupByLibrary.simpleMessage("Get product at your door"),
+        "welcomeTwoDesc": MessageLookupByLibrary.simpleMessage(
+            "Contrary to popular belief, Lorem Ipsum is not simply random text"),
+        "welcomeTwoTitle":
+            MessageLookupByLibrary.simpleMessage("Complete your shopping"),
         "zh": MessageLookupByLibrary.simpleMessage("Chinese")
       };
 }

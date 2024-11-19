@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "back": MessageLookupByLibrary.simpleMessage("返回"),
         "cancel": MessageLookupByLibrary.simpleMessage("取消"),
+        "confirm": MessageLookupByLibrary.simpleMessage("确定"),
         "email_iput_label": MessageLookupByLibrary.simpleMessage("邮箱"),
         "en": MessageLookupByLibrary.simpleMessage("英语"),
         "first_name_iput_label": MessageLookupByLibrary.simpleMessage("姓"),
@@ -55,6 +56,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "signup_button": MessageLookupByLibrary.simpleMessage("注册"),
         "signup_page_tips": MessageLookupByLibrary.simpleMessage("已经有账户了？"),
         "signup_page_title": MessageLookupByLibrary.simpleMessage("欢迎注册！"),
+        "skip": MessageLookupByLibrary.simpleMessage("跳过"),
+        "start": MessageLookupByLibrary.simpleMessage("开始"),
         "submit": MessageLookupByLibrary.simpleMessage("提交"),
         "username_iput_label": MessageLookupByLibrary.simpleMessage("用户名"),
         "validator_email": MessageLookupByLibrary.simpleMessage("邮箱格式不正确"),
@@ -65,6 +68,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "validator_required": MessageLookupByLibrary.simpleMessage("不能为空"),
         "validator_username":
             MessageLookupByLibrary.simpleMessage("用户名必须在6 ~ 18位之间"),
+        "welcomeOneDesc": MessageLookupByLibrary.simpleMessage("多快好省，购物更轻松"),
+        "welcomeOneTitle": MessageLookupByLibrary.simpleMessage("选择你想要的产品"),
+        "welcomeThreeDesc": MessageLookupByLibrary.simpleMessage("多快好省，购物更轻松"),
+        "welcomeThreeTitle": MessageLookupByLibrary.simpleMessage("快乐生活"),
+        "welcomeTwoDesc": MessageLookupByLibrary.simpleMessage("多快好省，购物更轻松"),
+        "welcomeTwoTitle": MessageLookupByLibrary.simpleMessage("轻松shopping"),
         "zh": MessageLookupByLibrary.simpleMessage("中文")
       };
 }

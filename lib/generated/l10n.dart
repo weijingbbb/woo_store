@@ -140,6 +140,26 @@ class S {
     );
   }
 
+  /// `Star`
+  String get start {
+    return Intl.message(
+      'Star',
+      name: 'start',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm`
+  String get confirm {
+    return Intl.message(
+      'Confirm',
+      name: 'confirm',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Back`
   String get back {
     return Intl.message(
@@ -155,6 +175,16 @@ class S {
     return Intl.message(
       'Next',
       name: 'next',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Skip`
+  String get skip {
+    return Intl.message(
+      'Skip',
+      name: 'skip',
       desc: '',
       args: [],
     );
@@ -435,6 +465,66 @@ class S {
     return Intl.message(
       'must have between 3 and 18 digits.',
       name: 'validator_length',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose Your Desire Product`
+  String get welcomeOneTitle {
+    return Intl.message(
+      'Choose Your Desire Product',
+      name: 'welcomeOneTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contrary to popular belief, Lorem Ipsum is not simply random text`
+  String get welcomeOneDesc {
+    return Intl.message(
+      'Contrary to popular belief, Lorem Ipsum is not simply random text',
+      name: 'welcomeOneDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Complete your shopping`
+  String get welcomeTwoTitle {
+    return Intl.message(
+      'Complete your shopping',
+      name: 'welcomeTwoTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contrary to popular belief, Lorem Ipsum is not simply random text`
+  String get welcomeTwoDesc {
+    return Intl.message(
+      'Contrary to popular belief, Lorem Ipsum is not simply random text',
+      name: 'welcomeTwoDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Get product at your door`
+  String get welcomeThreeTitle {
+    return Intl.message(
+      'Get product at your door',
+      name: 'welcomeThreeTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contrary to popular belief, Lorem Ipsum is not simply random text`
+  String get welcomeThreeDesc {
+    return Intl.message(
+      'Contrary to popular belief, Lorem Ipsum is not simply random text',
+      name: 'welcomeThreeDesc',
       desc: '',
       args: [],
     );
