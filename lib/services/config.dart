@@ -1,6 +1,5 @@
 import 'package:get/get.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:woo_store/utils/index.dart';
 import 'package:woo_store/values/index.dart';
 
 import 'storage.dart';
@@ -26,7 +25,7 @@ class ConfigService extends GetxController {
   // 初始
   Future<void> init() async {
     _platform = await PackageInfo.fromPlatform();
-    Console.log('初始化ConfigService，当前版本号: ${_platform?.version}');
+    // Console.log('初始化ConfigService，当前版本号: ${_platform?.version}');
   }
 
   @override

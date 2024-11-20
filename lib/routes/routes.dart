@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
+import 'package:uuid/uuid.dart';
 import 'package:woo_store/models/index.dart';
 import 'package:woo_store/pages/index.dart';
 import 'package:woo_store/services/index.dart';
@@ -13,7 +14,17 @@ abstract class Routes {
   static final List<String> history = [];
 
   // 更新refresh，执行路由重定向，判断是否登录，未登录则跳转到登录页
-  static final ValueNotifier<bool> refresh = ValueNotifier(false);
+  static final ValueNotifier<String> refresh = ValueNotifier(const Uuid().v4());
+
+  // 更新refresh，执行路由重定向
+  static void refreshRoute() {
+    // 旧值 const Uuid().v4()
+    final old = refresh.value;
+    // 新值
+    final id = const Uuid().v4();
+    refresh.value = id;
+    print('刷新路由,新值：$id，旧值：$old');
+  }
 
   // 清空历史记录
   static void clearHistory() {
@@ -54,11 +65,20 @@ abstract class Routes {
   static final config = GoRouter(
     navigatorKey: GlobalKey<NavigatorState>(),
     observers: [observer],
-    initialLocation: RouteNames.myOrderList,
+    initialLocation: '/',
     redirect: _RouteRedirect.auth,
     refreshListenable: refresh,
     routes: [
       ...tarbarPage,
+      GoRoute(
+        path: '/',
+        name: RouteNames.systemMain,
+        pageBuilder: (context, state) => CupertinoPage(
+          name: state.uri.toString(),
+          key: state.pageKey,
+          child: const MainPage(),
+        ),
+      ),
       GoRoute(
         path: RouteNames.systemSplash,
         name: RouteNames.systemSplash,
@@ -78,15 +98,6 @@ abstract class Routes {
         ),
       ),
       GoRoute(
-        path: RouteNames.systemMain,
-        name: RouteNames.systemMain,
-        pageBuilder: (context, state) => CupertinoPage(
-          name: state.uri.toString(),
-          key: state.pageKey,
-          child: const MainPage(),
-        ),
-      ),
-      GoRoute(
         path: RouteNames.systemLogin,
         name: RouteNames.systemLogin,
         pageBuilder: (context, state) => CupertinoPage(
@@ -94,7 +105,7 @@ abstract class Routes {
           key: state.pageKey,
           child: const LoginPage(),
         ),
-        redirect: _RouteRedirect.isLoginPage,
+        // redirect: _RouteRedirect.isLoginPage,
       ),
       GoRoute(
         path: RouteNames.systemRegister,
@@ -160,27 +171,27 @@ abstract class Routes {
 
 abstract class _RouteRedirect {
   static String? auth(BuildContext context, GoRouterState state) {
-    final to = state.uri.toString();
-    Console.log('登录鉴权：$to,---${RouteNames.noAuthPaths.contains(to)}');
-    if (RouteNames.noAuthPaths.contains(to)) {
+    final to = state.matchedLocation;
+    final noAuthPath = RouteNames.noAuthPaths.contains(to);
+    print(
+        '当前准备进入页面：$to,---是否无需登录：$noAuthPath,---登录状态：${UserService.to.isLogin},---栈：${Routes.history.toString()}');
+
+    // 当退出登录时，上一个页面是权限页面，就跳转到首页
+
+    if (noAuthPath) {
       return null;
     }
-    if (UserService.to.isLogin) return null;
-
-    return RouteNames.systemLogin;
+    if (!UserService.to.isLogin) {
+      return RouteNames.systemLogin;
+    }
+    return null;
   }
 
   static String? isLoginPage(BuildContext context, GoRouterState state) {
-    // Console.log('isLoginPage------------${UserService.to.isLogin}');
-    // 如果已经登录，就跳转到首页
+    print('当前是登录页-------------------');
+    // 如果已经登录，就跳转到首页, 并且当前是登录页，就跳转到首页
     if (UserService.to.isLogin) {
       return RouteNames.systemMain;
-      // 如果历史记录列表中倒数第二个元素不是首页，就跳转到这个页面，否则跳转到首页
-      // if (Routes.history.length > 1 &&
-      //     Routes.history[Routes.history.length - 2] != RouteNames.systemMain) {
-      //   return Routes.history[Routes.history.length - 2];
-      // }
-      // return RouteNames.systemMain;
     }
     return null;
   }

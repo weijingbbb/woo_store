@@ -23,7 +23,6 @@ class UserApi {
       '/users/login',
       data: req,
     );
-    Console.log('登录结果: result: $result');
 
     return UserTokenModel.fromJson(result.data);
   }

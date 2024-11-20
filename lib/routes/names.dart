@@ -19,6 +19,7 @@ class RouteNames {
 
   // 不需要登录的路径
   static final noAuthPaths = [
+    '/',
     systemMain,
     systemSplash,
     systemWelcome,

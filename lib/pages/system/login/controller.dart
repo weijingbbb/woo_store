@@ -33,8 +33,6 @@ class LoginController extends GetxController {
           username: userNameController.text,
           password: password,
         ));
-        // 打印结果
-        Console.log('controller------- res: ${res.toJson()}');
 
         // 本地保存 token
         await UserService.to.saveToken(res.token!);

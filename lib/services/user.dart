@@ -3,7 +3,8 @@ import 'dart:convert';
 import 'package:get/get.dart';
 import 'package:woo_store/apis/index.dart';
 import 'package:woo_store/models/index.dart';
-import 'package:woo_store/utils/index.dart';
+import 'package:woo_store/pages/system/main/controller.dart';
+import 'package:woo_store/routes/index.dart';
 import 'package:woo_store/values/index.dart';
 
 import 'storage.dart';
@@ -35,21 +36,15 @@ class UserService extends GetxController {
     UserProfileModel result = await UserApi.profile();
 
     // 如果数据获取成功，更新数据，更新_isLogin
+    await saveLoginStatus(true);
     await setProfile(result);
   }
 
   // 设置用户资料
   Future<void> setProfile(UserProfileModel newProfile) async {
     _profile = newProfile;
-    saveLoginStatus(true);
-    Console.log('用户资料: ${_profile.toJson()}');
     StorageService.to
         .setString(Constants.storageProfile, jsonEncode(newProfile));
-  }
-
-  // 清除用户资料 - 退出登录
-  void logout() {
-    saveLoginStatus(false);
   }
 
   // 保存用户的token
@@ -67,6 +62,19 @@ class UserService extends GetxController {
     // 刷新路由
     // Routes.refresh.value = !Routes.refresh.value;
     // await Future.delayed(const Duration(microseconds: 0));
+  }
+
+  // 清除用户资料 - 退出登录
+  void logout() async {
+    await saveLoginStatus(false);
+    await saveToken('');
+    await setProfile(UserProfileModel());
+
+    Routes.clearHistory();
+    // Routes.refreshRoute();
+    // 通过 Get 找到 MainController 并跳转到首页
+    final MainController mainController = Get.find<MainController>();
+    mainController.pageController.jumpToPage(0);
   }
 
   @override

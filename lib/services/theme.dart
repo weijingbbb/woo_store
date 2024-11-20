@@ -11,7 +11,6 @@ class ThemeService extends GetxController {
 
   void initTheme() {
     final theme = StorageService.to.getString(Constants.storageThemeMode);
-    print('初始化主题，当前主题模式为: $theme');
     switch (theme) {
       case Constants.themeLight:
         AppTheme.mode = ThemeMode.light;

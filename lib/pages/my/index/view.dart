@@ -6,7 +6,6 @@ import 'package:woo_store/generated/l10n.dart';
 import 'package:woo_store/routes/index.dart';
 import 'package:woo_store/services/index.dart';
 import 'package:woo_store/style/index.dart';
-import 'package:woo_store/utils/index.dart';
 import 'package:woo_store/values/index.dart';
 import 'package:woo_store/widgets/index.dart';
 
@@ -46,8 +45,10 @@ class MyIndexPage extends GetView<MyIndexController> {
           S.current.my_page_logout.tr,
           // height: 60,
           onTap: () => {
-            // 打印版本
-            Console.log("版本号: $version"),
+            // 注销
+            UserService.to.logout(),
+
+            // context.goNamed(RouteNames.systemMain),
           },
         )
             .padding(

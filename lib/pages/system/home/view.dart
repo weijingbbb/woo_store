@@ -54,7 +54,12 @@ class HomePage extends GetView<HomeController> {
             },
             child: const Text('查看用户信息'),
           ),
-          
+          OutlinedButton(
+            onPressed: () {
+              Routes.refreshRoute();
+            },
+            child: const Text('刷新路由的refresh值'),
+          ),
         ],
       ),
     );

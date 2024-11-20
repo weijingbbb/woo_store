@@ -9,14 +9,16 @@ class RouteObservers<R extends Route<dynamic>> extends RouteObserver<R> {
     super.didPush(route, previousRoute);
     var name = route.settings.name ?? '';
     if (name.isNotEmpty) Routes.history.add(name);
-    debugPrint('路由推入,${Routes.history.toString()}');
+    debugPrint(
+        '路由推入: ${route.settings.name},=== 栈: ${Routes.history.toString()}');
   }
 
   @override
   void didPop(Route<dynamic> route, Route<dynamic>? previousRoute) {
     super.didPop(route, previousRoute);
     Routes.history.remove(route.settings.name);
-    debugPrint('路由推出,${Routes.history.toString()}');
+    debugPrint(
+        '路由推出: ${route.settings.name},=== 栈: ${Routes.history.toString()}');
   }
 
   @override
@@ -42,6 +44,7 @@ class RouteObservers<R extends Route<dynamic>> extends RouteObserver<R> {
   void didRemove(Route<dynamic> route, Route<dynamic>? previousRoute) {
     super.didRemove(route, previousRoute);
     Routes.history.remove(route.settings.name);
-    debugPrint('移除路由,${Routes.history.toString()}');
+    debugPrint(
+        '移除路由: ${route.settings.name},=== 栈:${Routes.history.toString()}');
   }
 }
