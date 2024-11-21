@@ -173,7 +173,10 @@ class MyIndexPage extends GetView<MyIndexController> {
         title: S.current.my_page_personal_data.tr,
         svgPath: AssetsSvgs.pCurrencySvg,
         color: "4971FF".toColor,
-        onTap: () => {},
+        onTap: () => {
+          // 跳转到个人资料页
+          context.pushNamed(RouteNames.myProfileEdit),
+        },
       ),
       // 发票地址
       ButtonItemWidget(

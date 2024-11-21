@@ -16,6 +16,7 @@ class RouteNames {
   static const myLanguage = '/my_language'; // 语言设置页
   static const myOrderList = '/my_order_list'; // 订单列表页
   static const myOrderDetail = '/my_order_detail'; // 订单详情页
+  static const myProfileEdit = '/my_profile_edit'; // 资料编辑页
 
   // 不需要登录的路径
   static final noAuthPaths = [

@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:uuid/uuid.dart';
 import 'package:woo_store/models/index.dart';
 import 'package:woo_store/pages/index.dart';
+import 'package:woo_store/pages/my/profile_edit/view.dart';
 import 'package:woo_store/services/index.dart';
 import 'package:woo_store/utils/index.dart';
 
@@ -65,7 +66,7 @@ abstract class Routes {
   static final config = GoRouter(
     navigatorKey: GlobalKey<NavigatorState>(),
     observers: [observer],
-    initialLocation: '/',
+    initialLocation: RouteNames.myProfileEdit,
     redirect: _RouteRedirect.auth,
     refreshListenable: refresh,
     routes: [
@@ -163,6 +164,15 @@ abstract class Routes {
           name: state.uri.toString(),
           key: state.pageKey,
           child: OrderDetailPage(order: state.extra as OrderModel),
+        ),
+      ),
+      GoRoute(
+        path: RouteNames.myProfileEdit,
+        name: RouteNames.myProfileEdit,
+        pageBuilder: (context, state) => CupertinoPage(
+          name: state.uri.toString(),
+          key: state.pageKey,
+          child: ProfileEditPage(),
         ),
       ),
     ],
