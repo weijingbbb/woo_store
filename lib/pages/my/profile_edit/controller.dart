@@ -7,6 +7,9 @@ import 'package:get/get.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:wechat_assets_picker/wechat_assets_picker.dart';
 import 'package:wechat_camera_picker/wechat_camera_picker.dart';
+import 'package:woo_store/apis/index.dart';
+import 'package:woo_store/models/index.dart';
+import 'package:woo_store/services/user.dart';
 import 'package:woo_store/utils/index.dart';
 import 'package:woo_store/widgets/index.dart';
 
@@ -19,6 +22,30 @@ class ProfileEditController extends GetxController {
   File? filePhoto;
 
   final List<AssetEntity> assets = [];
+
+  // 表单 form
+  GlobalKey formKey = GlobalKey<FormState>();
+
+  // 输入框控制器
+  TextEditingController firstNameController = TextEditingController();
+  TextEditingController lastNameController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController oldPasswordController = TextEditingController();
+  TextEditingController newPasswordController = TextEditingController();
+  TextEditingController confirmNewPasswordController = TextEditingController();
+
+  // 初始化用户数据到表单
+  _initData() {
+    // 用户 profile
+    UserProfileModel profile = UserService.to.profile;
+
+    // 初始值
+    firstNameController.text = profile.firstName ?? "";
+    lastNameController.text = profile.lastName ?? "";
+    emailController.text = profile.email ?? "";
+
+    update(["profile_edit"]);
+  }
 
   // 点击选择图片按钮
   void _choicePhoto() async {
@@ -170,5 +197,41 @@ class ProfileEditController extends GetxController {
       ].toColumn(crossAxisAlignment: CrossAxisAlignment.stretch).center(),
     );
     // _showImagePickerDialog();
+  }
+
+  // 保存
+  Future<void> onSave() async {
+    if ((formKey.currentState as FormState).validate()) {
+      // 密码 email 不修改 影响登录
+
+      // 提交
+      UserProfileModel profile = await UserApi.saveBaseInfo(UserProfileModel(
+        firstName: firstNameController.text,
+        lastName: lastNameController.text,
+        email: emailController.text,
+      ));
+
+      // 更新本地
+      UserService.to.setProfile(profile);
+      Loading.success();
+      update(["profile_edit"]);
+    }
+  }
+
+  @override
+  void onInit() {
+    super.onInit();
+    _initData();
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+    firstNameController.dispose();
+    lastNameController.dispose();
+    emailController.dispose();
+    oldPasswordController.dispose();
+    newPasswordController.dispose();
+    confirmNewPasswordController.dispose();
   }
 }

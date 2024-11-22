@@ -27,6 +27,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "current_version":
             MessageLookupByLibrary.simpleMessage("current version"),
+        "edit": MessageLookupByLibrary.simpleMessage("编辑"),
+        "edit_passowrd_new":
+            MessageLookupByLibrary.simpleMessage("new password"),
+        "edit_passowrd_new_confirm":
+            MessageLookupByLibrary.simpleMessage("confirm new password"),
+        "edit_passowrd_old":
+            MessageLookupByLibrary.simpleMessage("old password"),
         "email_iput_label": MessageLookupByLibrary.simpleMessage("Email"),
         "en": MessageLookupByLibrary.simpleMessage("English"),
         "first_name_iput_label":
@@ -103,6 +110,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Verification"),
         "register_pin_success":
             MessageLookupByLibrary.simpleMessage("Registered Successfully"),
+        "save": MessageLookupByLibrary.simpleMessage("保存"),
         "signup": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "signup_button": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "signup_page_tips":
@@ -119,6 +127,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("setting theme"),
         "username_iput_label":
             MessageLookupByLibrary.simpleMessage("User Name"),
+        "validator_confirm_password":
+            MessageLookupByLibrary.simpleMessage("password is not match."),
         "validator_email": MessageLookupByLibrary.simpleMessage(
             "email must be a valid email address."),
         "validator_length": MessageLookupByLibrary.simpleMessage(
@@ -127,6 +137,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "password must have between 6 and 18 digits."),
         "validator_required":
             MessageLookupByLibrary.simpleMessage("This field is required."),
+        "validator_skip": MessageLookupByLibrary.simpleMessage("skip this"),
         "validator_username": MessageLookupByLibrary.simpleMessage(
             "username must have between 6 and 18 digits."),
         "welcomeOneDesc": MessageLookupByLibrary.simpleMessage(

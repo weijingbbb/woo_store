@@ -80,7 +80,7 @@ class NetworkService extends GetxService {
     }
   }
 
-  Future<ResponseModel> put(
+  Future<Response> put(
     String url, {
     dynamic data,
     Options? options,
@@ -94,7 +94,8 @@ class NetworkService extends GetxService {
         options: requestOptions,
         cancelToken: cancelToken,
       );
-      return ResponseModel.fromJson(response.data);
+      return response;
+      // return ResponseModel.fromJson(response.data);
     } catch (error) {
       // if (error is! DioException) Loading.error(error.toString());
       rethrow;

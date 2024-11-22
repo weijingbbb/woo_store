@@ -66,7 +66,7 @@ abstract class Routes {
   static final config = GoRouter(
     navigatorKey: GlobalKey<NavigatorState>(),
     observers: [observer],
-    initialLocation: RouteNames.myProfileEdit,
+    initialLocation: '/',
     redirect: _RouteRedirect.auth,
     refreshListenable: refresh,
     routes: [
@@ -172,7 +172,7 @@ abstract class Routes {
         pageBuilder: (context, state) => CupertinoPage(
           name: state.uri.toString(),
           key: state.pageKey,
-          child: ProfileEditPage(),
+          child: const ProfileEditPage(),
         ),
       ),
     ],

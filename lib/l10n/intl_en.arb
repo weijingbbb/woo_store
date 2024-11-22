@@ -7,6 +7,8 @@
     "navigation_cart": "Cart",
     "navigation_profile": "Profile",
     "submit": "Submit",
+    "edit": "编辑",
+    "save": "保存",
     "cancel": "Cancel",
     "start": "Star",
     "confirm": "Confirm",
@@ -43,12 +45,17 @@
     "register_pin_fail": "Fail To Register",
 
     
+    "edit_passowrd_old": "old password",
+    "edit_passowrd_new": "new password",
+    "edit_passowrd_new_confirm": "confirm new password",
 
     "validator_required": "This field is required.",
     "validator_username": "username must have between 6 and 18 digits.",
     "validator_password": "password must have between 6 and 18 digits.",
     "validator_email": "email must be a valid email address.",
     "validator_length": "must have between 3 and 18 digits.",
+    "validator_skip": "skip this",
+    "validator_confirm_password": "password is not match.",
 
     "welcomeOneTitle": "Choose Your Desire Product",
     "welcomeOneDesc": "Contrary to popular belief, Lorem Ipsum is not simply random text",

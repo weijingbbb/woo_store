@@ -26,6 +26,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("取消"),
         "confirm": MessageLookupByLibrary.simpleMessage("确定"),
         "current_version": MessageLookupByLibrary.simpleMessage("当前版本号"),
+        "edit": MessageLookupByLibrary.simpleMessage("编辑"),
+        "edit_passowrd_new": MessageLookupByLibrary.simpleMessage("新密码"),
+        "edit_passowrd_new_confirm":
+            MessageLookupByLibrary.simpleMessage("确认新密码"),
+        "edit_passowrd_old": MessageLookupByLibrary.simpleMessage("旧密码"),
         "email_iput_label": MessageLookupByLibrary.simpleMessage("邮箱"),
         "en": MessageLookupByLibrary.simpleMessage("英语"),
         "first_name_iput_label": MessageLookupByLibrary.simpleMessage("姓"),
@@ -86,6 +91,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("我们将会发送验证码到你的邮箱进行验证。"),
         "register_pin_page_title": MessageLookupByLibrary.simpleMessage("验证码"),
         "register_pin_success": MessageLookupByLibrary.simpleMessage("注册成功"),
+        "save": MessageLookupByLibrary.simpleMessage("保存"),
         "signup": MessageLookupByLibrary.simpleMessage("注册"),
         "signup_button": MessageLookupByLibrary.simpleMessage("注册"),
         "signup_page_tips": MessageLookupByLibrary.simpleMessage("已经有账户了？"),
@@ -98,12 +104,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "theme_page_system": MessageLookupByLibrary.simpleMessage("根据系统"),
         "theme_page_title": MessageLookupByLibrary.simpleMessage("设置主题"),
         "username_iput_label": MessageLookupByLibrary.simpleMessage("用户名"),
+        "validator_confirm_password":
+            MessageLookupByLibrary.simpleMessage("两次输入的密码不一致"),
         "validator_email": MessageLookupByLibrary.simpleMessage("邮箱格式不正确"),
         "validator_length":
             MessageLookupByLibrary.simpleMessage("字符长度必须在3 ~ 18位之间"),
         "validator_password":
             MessageLookupByLibrary.simpleMessage("密码长度必须在6 ~ 18位之间"),
         "validator_required": MessageLookupByLibrary.simpleMessage("不能为空"),
+        "validator_skip": MessageLookupByLibrary.simpleMessage("不输入表示不修改此项"),
         "validator_username":
             MessageLookupByLibrary.simpleMessage("用户名必须在6 ~ 18位之间"),
         "welcomeOneDesc": MessageLookupByLibrary.simpleMessage("多快好省，购物更轻松"),

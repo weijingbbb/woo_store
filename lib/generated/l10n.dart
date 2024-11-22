@@ -130,6 +130,26 @@ class S {
     );
   }
 
+  /// `编辑`
+  String get edit {
+    return Intl.message(
+      '编辑',
+      name: 'edit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `保存`
+  String get save {
+    return Intl.message(
+      '保存',
+      name: 'save',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Cancel`
   String get cancel {
     return Intl.message(
@@ -420,6 +440,36 @@ class S {
     );
   }
 
+  /// `old password`
+  String get edit_passowrd_old {
+    return Intl.message(
+      'old password',
+      name: 'edit_passowrd_old',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `new password`
+  String get edit_passowrd_new {
+    return Intl.message(
+      'new password',
+      name: 'edit_passowrd_new',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `confirm new password`
+  String get edit_passowrd_new_confirm {
+    return Intl.message(
+      'confirm new password',
+      name: 'edit_passowrd_new_confirm',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `This field is required.`
   String get validator_required {
     return Intl.message(
@@ -465,6 +515,26 @@ class S {
     return Intl.message(
       'must have between 3 and 18 digits.',
       name: 'validator_length',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `skip this`
+  String get validator_skip {
+    return Intl.message(
+      'skip this',
+      name: 'validator_skip',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `password is not match.`
+  String get validator_confirm_password {
+    return Intl.message(
+      'password is not match.',
+      name: 'validator_confirm_password',
       desc: '',
       args: [],
     );
