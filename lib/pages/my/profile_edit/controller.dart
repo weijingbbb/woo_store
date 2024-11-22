@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:wechat_assets_picker/wechat_assets_picker.dart';
+import 'package:wechat_camera_picker/wechat_camera_picker.dart';
 import 'package:woo_store/utils/index.dart';
 import 'package:woo_store/widgets/index.dart';
 
@@ -19,23 +20,23 @@ class ProfileEditController extends GetxController {
 
   final List<AssetEntity> assets = [];
 
-  // 显示图片选择弹窗
-  void _showImagePickerDialog() async {
+  // 点击选择图片按钮
+  void _choicePhoto() async {
     // 检查相册权限
-    var status = await Permission.photos.status;
-    Console.log('相册权限状态一: ${status.toString()}');
+    var photosStatus = await Permission.photos.status;
+    Console.log('相册权限状态一: ${photosStatus.toString()}');
 
     // 如果权限被拒绝，尝试请求权
-    if (status.isDenied) {
-      status = await Permission.photos.request();
+    if (photosStatus.isDenied) {
+      photosStatus = await Permission.photos.request();
     }
 
-    Console.log('相册权限状态二: ${status.toString()}');
+    Console.log('相册权限状态二: ${photosStatus.toString()}');
 
     if (context!.mounted) {
       // 如果权限仍然被拒绝，提示用户
-      if (status == PermissionStatus.permanentlyDenied) {
-        _showPermissionDeniedDialog();
+      if (photosStatus == PermissionStatus.permanentlyDenied) {
+        _showPermissionDeniedDialog(photosStatus);
         return;
       }
       final result = await AssetPicker.pickAssets(
@@ -54,14 +55,73 @@ class ProfileEditController extends GetxController {
     }
   }
 
+  // 点击拍照按钮
+  void _choiceCamera() async {
+    // 请求权限
+    var photosStatus = await Permission.photos.request();
+    // 检查权限状态 如果有权限被拒绝，提示用户跳转到设置
+    var cameraStatus = await Permission.camera.request();
+
+    var microphoneStatus = await Permission.microphone.request();
+    Console.log('''
+      cameraStatus: $cameraStatus,
+      cameraStatus.isGranted: ${cameraStatus.isGranted},
+      ''');
+    if (!microphoneStatus.isGranted) {
+      return _showPermissionDeniedDialog(microphoneStatus);
+    }
+    if (!cameraStatus.isGranted) {
+      return _showPermissionDeniedDialog(cameraStatus);
+    }
+    if (!photosStatus.isGranted) {
+      return _showPermissionDeniedDialog(photosStatus);
+    }
+    Console.log('''
+      microphoneStatus: $microphoneStatus,
+      microphoneStatus.isGranted: ${microphoneStatus.isGranted},
+      photosStatus: $photosStatus,
+      photosStatus.isGranted: ${photosStatus.isGranted},
+''');
+
+    final AssetEntity? result = await CameraPicker.pickFromCamera(
+      context!,
+      pickerConfig: const CameraPickerConfig(
+        // 关闭声音
+        enableAudio: false,
+        // 预设的分辨率
+        resolutionPreset: ResolutionPreset.veryHigh,
+      ),
+    );
+
+    if (result != null) {
+      filePhoto = await result.file;
+      update(["profile_edit"]);
+      context!.pop();
+    }
+  }
+
   // 显示权限被拒绝的提示对话框
-  void _showPermissionDeniedDialog() {
+  void _showPermissionDeniedDialog(
+      [PermissionStatus? cameraStatus,
+      PermissionStatus? microphoneStatus,
+      PermissionStatus? photosStatus]) {
+    String message = '请在设置中允许访问以下权限：\n';
+    if (cameraStatus != null) {
+      message += '摄像头';
+    }
+    if (microphoneStatus != null) {
+      message += '麦克风';
+    }
+    if (photosStatus != null) {
+      message += '相册';
+    }
+
     showDialog(
       context: context!,
       builder: (BuildContext context) {
         return CupertinoAlertDialog(
-          title: const Text('权限被拒绝'),
-          content: const Text('请在设置中允许访问相册。'),
+          title: const Text('设备使用权限被拒绝'),
+          content: Text(message),
           actions: [
             CupertinoDialogAction(
               onPressed: () {
@@ -70,11 +130,7 @@ class ProfileEditController extends GetxController {
                 openAppSettings();
               },
               child: const Text('去设置'),
-            ),
-            CupertinoDialogAction(
-              onPressed: () => Navigator.of(context).pop(),
-              child: const Text('取消'),
-            ),
+            )
           ],
         );
       },
@@ -94,9 +150,7 @@ class ProfileEditController extends GetxController {
             Icons.photo_camera,
             color: context!.colors.scheme.onPrimary,
           ),
-          onTap: () {
-            print('拍照');
-          },
+          onTap: _choiceCamera,
         ).marginSymmetric(vertical: 10),
         ButtonWidget.secondary(
           '从相册中选取',
@@ -104,9 +158,7 @@ class ProfileEditController extends GetxController {
             Icons.photo_library,
             color: context!.colors.scheme.onPrimary,
           ),
-          onTap: () {
-            _showImagePickerDialog();
-          },
+          onTap: _choicePhoto,
         ).marginOnly(bottom: 20),
         // 文字按钮
         ButtonWidget.ghost(
@@ -119,30 +171,4 @@ class ProfileEditController extends GetxController {
     );
     // _showImagePickerDialog();
   }
-
-  // 选择图片
-  // onSelectPhoto(BuildContext context) {
-  //   BottomSheetWidget.show(
-  //     context: context,
-  //     titleString: '选择照片上传',
-  //     padding: 20,
-  //     content: PickerImageWidget(
-  //       ccc: context,
-  //       // 拍照
-  //       onTapTake: (AssetEntity? result) async {
-  //         if (result != null) {
-  //           filePhoto = await result.file;
-  //           update(["profile_edit"]);
-  //         }
-  //       },
-  //       // 相册
-  //       onTapAlbum: (List<AssetEntity>? result) async {
-  //         if (result != null && result.isNotEmpty) {
-  //           filePhoto = await result.first.file;
-  //           update(["profile_edit"]);
-  //         }
-  //       },
-  //     ),
-  //   );
-  // }
 }
