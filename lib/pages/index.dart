@@ -1,6 +1,7 @@
 library pages;
 
 export 'cart/index/index.dart';
+export 'my/address/index.dart';
 export 'my/index/index.dart';
 export 'my/language/index.dart';
 export 'my/order_detail/index.dart';

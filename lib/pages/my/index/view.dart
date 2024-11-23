@@ -183,14 +183,23 @@ class MyIndexPage extends GetView<MyIndexController> {
         title: S.current.my_page_invoice_address.tr,
         svgPath: AssetsSvgs.pHomeSvg,
         color: "F43284".toColor,
-        onTap: () => {},
+        onTap: () => {
+          // 跳转到发票地址页
+          context.pushNamed(RouteNames.myAddress, queryParameters: {
+            "type": "Billing",
+          }),
+        },
       ),
       // 收货地址
       ButtonItemWidget(
         title: S.current.my_page_shipping_address.tr,
         svgPath: AssetsSvgs.pHomeSvg,
         color: "5F84FF".toColor,
-        onTap: () => {},
+        onTap: () => {
+          context.pushNamed(RouteNames.myAddress, queryParameters: {
+            "type": "Shipping",
+          }),
+        },
       ),
       // 语言
       ButtonItemWidget(

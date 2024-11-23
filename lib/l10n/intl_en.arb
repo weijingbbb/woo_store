@@ -7,8 +7,8 @@
     "navigation_cart": "Cart",
     "navigation_profile": "Profile",
     "submit": "Submit",
-    "edit": "编辑",
-    "save": "保存",
+    "edit": "Edit",
+    "save": "Save",
     "cancel": "Cancel",
     "start": "Star",
     "confirm": "Confirm",
@@ -18,6 +18,7 @@
     "loading": "Loading...",
     "no_data": "No Data",
     "no_more_data": "No More Data",
+    "coding": "coding...",
 
     "login": "Login",
     "login_page_title": "Welcome to login!",
@@ -36,6 +37,10 @@
     "email_iput_label": "Email",
     "first_name_iput_label": "First Name",
     "last_name_iput_label": "Last Name",
+    "postcode_iput_label": "Post Code",
+    "address_iput_label": "Address",
+    "company_iput_label": "Company",
+    "phone_iput_label": "Phone",
 
     "register_pin_appbar_title": "Register Pin",
     "register_pin_page_title": "Verification",
@@ -95,5 +100,13 @@
     "order_detail_settle_accounts": "settle accounts",
     "order_detail_page_total": "total",
     "order_detail_page_freight": "freight",
-    "order_detail_page_discount": "discount"
+    "order_detail_page_discount": "discount",
+
+    "address_page_title_bill": "bill address",
+    "address_page_title_shipping": "shipping address",
+
+    "choice_address": "choice address",
+    "choice_province": "choice province",
+    "choice_city": "choice city",
+    "choice_district": "choice district"
 }

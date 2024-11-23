@@ -22,12 +22,26 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "address_iput_label": MessageLookupByLibrary.simpleMessage("Address"),
+        "address_page_title_bill":
+            MessageLookupByLibrary.simpleMessage("bill address"),
+        "address_page_title_shipping":
+            MessageLookupByLibrary.simpleMessage("shipping address"),
         "back": MessageLookupByLibrary.simpleMessage("Back"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "choice_address":
+            MessageLookupByLibrary.simpleMessage("choice address"),
+        "choice_city": MessageLookupByLibrary.simpleMessage("choice city"),
+        "choice_district":
+            MessageLookupByLibrary.simpleMessage("choice district"),
+        "choice_province":
+            MessageLookupByLibrary.simpleMessage("choice province"),
+        "coding": MessageLookupByLibrary.simpleMessage("coding..."),
+        "company_iput_label": MessageLookupByLibrary.simpleMessage("Company"),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "current_version":
             MessageLookupByLibrary.simpleMessage("current version"),
-        "edit": MessageLookupByLibrary.simpleMessage("编辑"),
+        "edit": MessageLookupByLibrary.simpleMessage("Edit"),
         "edit_passowrd_new":
             MessageLookupByLibrary.simpleMessage("new password"),
         "edit_passowrd_new_confirm":
@@ -98,6 +112,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "order_list_page_title":
             MessageLookupByLibrary.simpleMessage("order list"),
         "password_iput_label": MessageLookupByLibrary.simpleMessage("Password"),
+        "phone_iput_label": MessageLookupByLibrary.simpleMessage("Phone"),
+        "postcode_iput_label":
+            MessageLookupByLibrary.simpleMessage("Post Code"),
         "register_pin_appbar_title":
             MessageLookupByLibrary.simpleMessage("Register Pin"),
         "register_pin_error":
@@ -110,7 +127,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Verification"),
         "register_pin_success":
             MessageLookupByLibrary.simpleMessage("Registered Successfully"),
-        "save": MessageLookupByLibrary.simpleMessage("保存"),
+        "save": MessageLookupByLibrary.simpleMessage("Save"),
         "signup": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "signup_button": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "signup_page_tips":

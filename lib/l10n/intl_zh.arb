@@ -18,6 +18,8 @@
     "loading": "加载中...",
     "no_data": "暂无数据",
     "no_more_data": "没有更多数据了",
+    "coding": "页面开发中,请稍等...",
+
 
     "login": "登录",
     "login_page_title": "欢迎登录！",
@@ -36,6 +38,10 @@
     "email_iput_label": "邮箱",
     "first_name_iput_label": "姓",
     "last_name_iput_label": "名",
+    "postcode_iput_label": "邮编",
+    "address_iput_label": "地址",
+    "company_iput_label": "公司",
+    "phone_iput_label": "电话",
 
     "register_pin_appbar_title": "注册",
     "register_pin_page_title": "验证码",
@@ -93,9 +99,14 @@
     "order_detail_settle_accounts": "结算",
     "order_detail_page_total": "合计",
     "order_detail_page_freight": "运费",
-    "order_detail_page_discount": "折扣"
+    "order_detail_page_discount": "折扣",
 
 
+    "address_page_title_bill": "发票地址",
+    "address_page_title_shipping": "收货地址",
 
-
+    "choice_address": "选择地址",
+    "choice_province": "请选择省份",
+    "choice_city": "请选择城市",
+    "choice_district": "请选择区/县"
 }

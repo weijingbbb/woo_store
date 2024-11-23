@@ -17,6 +17,7 @@ class RouteNames {
   static const myOrderList = '/my_order_list'; // 订单列表页
   static const myOrderDetail = '/my_order_detail'; // 订单详情页
   static const myProfileEdit = '/my_profile_edit'; // 资料编辑页
+  static const myAddress = '/my_address'; // 地址管理页
 
   // 不需要登录的路径
   static final noAuthPaths = [

@@ -130,20 +130,20 @@ class S {
     );
   }
 
-  /// `编辑`
+  /// `Edit`
   String get edit {
     return Intl.message(
-      '编辑',
+      'Edit',
       name: 'edit',
       desc: '',
       args: [],
     );
   }
 
-  /// `保存`
+  /// `Save`
   String get save {
     return Intl.message(
-      '保存',
+      'Save',
       name: 'save',
       desc: '',
       args: [],
@@ -235,6 +235,16 @@ class S {
     return Intl.message(
       'No More Data',
       name: 'no_more_data',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `coding...`
+  String get coding {
+    return Intl.message(
+      'coding...',
+      name: 'coding',
       desc: '',
       args: [],
     );
@@ -375,6 +385,46 @@ class S {
     return Intl.message(
       'Last Name',
       name: 'last_name_iput_label',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Post Code`
+  String get postcode_iput_label {
+    return Intl.message(
+      'Post Code',
+      name: 'postcode_iput_label',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Address`
+  String get address_iput_label {
+    return Intl.message(
+      'Address',
+      name: 'address_iput_label',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Company`
+  String get company_iput_label {
+    return Intl.message(
+      'Company',
+      name: 'company_iput_label',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone`
+  String get phone_iput_label {
+    return Intl.message(
+      'Phone',
+      name: 'phone_iput_label',
       desc: '',
       args: [],
     );
@@ -885,6 +935,66 @@ class S {
     return Intl.message(
       'discount',
       name: 'order_detail_page_discount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `bill address`
+  String get address_page_title_bill {
+    return Intl.message(
+      'bill address',
+      name: 'address_page_title_bill',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `shipping address`
+  String get address_page_title_shipping {
+    return Intl.message(
+      'shipping address',
+      name: 'address_page_title_shipping',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `choice address`
+  String get choice_address {
+    return Intl.message(
+      'choice address',
+      name: 'choice_address',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `choice province`
+  String get choice_province {
+    return Intl.message(
+      'choice province',
+      name: 'choice_province',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `choice city`
+  String get choice_city {
+    return Intl.message(
+      'choice city',
+      name: 'choice_city',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `choice district`
+  String get choice_district {
+    return Intl.message(
+      'choice district',
+      name: 'choice_district',
       desc: '',
       args: [],
     );

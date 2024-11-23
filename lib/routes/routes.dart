@@ -175,6 +175,17 @@ abstract class Routes {
           child: const ProfileEditPage(),
         ),
       ),
+      GoRoute(
+        path: RouteNames.myAddress,
+        name: RouteNames.myAddress,
+        pageBuilder: (context, state) => CupertinoPage(
+          name: state.uri.toString(),
+          key: state.pageKey,
+          child: AddressPage(
+            type: state.uri.queryParameters['type'],
+          ),
+        ),
+      ),
     ],
   );
 }

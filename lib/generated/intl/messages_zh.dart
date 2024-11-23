@@ -22,8 +22,18 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "address_iput_label": MessageLookupByLibrary.simpleMessage("地址"),
+        "address_page_title_bill": MessageLookupByLibrary.simpleMessage("发票地址"),
+        "address_page_title_shipping":
+            MessageLookupByLibrary.simpleMessage("收货地址"),
         "back": MessageLookupByLibrary.simpleMessage("返回"),
         "cancel": MessageLookupByLibrary.simpleMessage("取消"),
+        "choice_address": MessageLookupByLibrary.simpleMessage("选择地址"),
+        "choice_city": MessageLookupByLibrary.simpleMessage("请选择城市"),
+        "choice_district": MessageLookupByLibrary.simpleMessage("请选择区/县"),
+        "choice_province": MessageLookupByLibrary.simpleMessage("请选择省份"),
+        "coding": MessageLookupByLibrary.simpleMessage("页面开发中,请稍等..."),
+        "company_iput_label": MessageLookupByLibrary.simpleMessage("公司"),
         "confirm": MessageLookupByLibrary.simpleMessage("确定"),
         "current_version": MessageLookupByLibrary.simpleMessage("当前版本号"),
         "edit": MessageLookupByLibrary.simpleMessage("编辑"),
@@ -84,6 +94,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("结算"),
         "order_list_page_title": MessageLookupByLibrary.simpleMessage("订单列表"),
         "password_iput_label": MessageLookupByLibrary.simpleMessage("密码"),
+        "phone_iput_label": MessageLookupByLibrary.simpleMessage("电话"),
+        "postcode_iput_label": MessageLookupByLibrary.simpleMessage("邮编"),
         "register_pin_appbar_title": MessageLookupByLibrary.simpleMessage("注册"),
         "register_pin_error": MessageLookupByLibrary.simpleMessage("验证码错误"),
         "register_pin_fail": MessageLookupByLibrary.simpleMessage("注册失败"),
