@@ -6,6 +6,9 @@
     "navigation_home": "主页",
     "navigation_cart": "购物车",
     "navigation_profile": "我的",
+
+    "search": "搜索",
+    "search_placeholder": "搜你喜欢",
     "submit": "提交",
     "edit": "编辑",
     "save": "保存",

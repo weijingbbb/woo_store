@@ -120,6 +120,26 @@ class S {
     );
   }
 
+  /// `Search`
+  String get search {
+    return Intl.message(
+      'Search',
+      name: 'search',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search for goods`
+  String get search_placeholder {
+    return Intl.message(
+      'Search for goods',
+      name: 'search_placeholder',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Submit`
   String get submit {
     return Intl.message(

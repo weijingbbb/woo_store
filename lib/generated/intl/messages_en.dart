@@ -128,6 +128,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "register_pin_success":
             MessageLookupByLibrary.simpleMessage("Registered Successfully"),
         "save": MessageLookupByLibrary.simpleMessage("Save"),
+        "search": MessageLookupByLibrary.simpleMessage("Search"),
+        "search_placeholder":
+            MessageLookupByLibrary.simpleMessage("Search for goods"),
         "signup": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "signup_button": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "signup_page_tips":

@@ -104,6 +104,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "register_pin_page_title": MessageLookupByLibrary.simpleMessage("验证码"),
         "register_pin_success": MessageLookupByLibrary.simpleMessage("注册成功"),
         "save": MessageLookupByLibrary.simpleMessage("保存"),
+        "search": MessageLookupByLibrary.simpleMessage("搜索"),
+        "search_placeholder": MessageLookupByLibrary.simpleMessage("搜你喜欢"),
         "signup": MessageLookupByLibrary.simpleMessage("注册"),
         "signup_button": MessageLookupByLibrary.simpleMessage("注册"),
         "signup_page_tips": MessageLookupByLibrary.simpleMessage("已经有账户了？"),

@@ -6,6 +6,9 @@
     "navigation_home": "Home",
     "navigation_cart": "Cart",
     "navigation_profile": "Profile",
+
+    "search": "Search",
+    "search_placeholder": "Search for goods",
     "submit": "Submit",
     "edit": "Edit",
     "save": "Save",
