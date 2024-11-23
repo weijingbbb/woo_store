@@ -26,6 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "address_page_title_bill": MessageLookupByLibrary.simpleMessage("发票地址"),
         "address_page_title_shipping":
             MessageLookupByLibrary.simpleMessage("收货地址"),
+        "all": MessageLookupByLibrary.simpleMessage("更多"),
         "back": MessageLookupByLibrary.simpleMessage("返回"),
         "cancel": MessageLookupByLibrary.simpleMessage("取消"),
         "choice_address": MessageLookupByLibrary.simpleMessage("选择地址"),
@@ -44,6 +45,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "email_iput_label": MessageLookupByLibrary.simpleMessage("邮箱"),
         "en": MessageLookupByLibrary.simpleMessage("英语"),
         "first_name_iput_label": MessageLookupByLibrary.simpleMessage("姓"),
+        "hot_products": MessageLookupByLibrary.simpleMessage("热门商品"),
         "lang_en": MessageLookupByLibrary.simpleMessage("英语"),
         "lang_zh": MessageLookupByLibrary.simpleMessage("中文"),
         "language_page_title": MessageLookupByLibrary.simpleMessage("设置语言"),
@@ -69,6 +71,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "navigation_cart": MessageLookupByLibrary.simpleMessage("购物车"),
         "navigation_home": MessageLookupByLibrary.simpleMessage("主页"),
         "navigation_profile": MessageLookupByLibrary.simpleMessage("我的"),
+        "new_products": MessageLookupByLibrary.simpleMessage("新品推荐"),
         "next": MessageLookupByLibrary.simpleMessage("下一步"),
         "no_data": MessageLookupByLibrary.simpleMessage("暂无数据"),
         "no_more_data": MessageLookupByLibrary.simpleMessage("没有更多数据了"),

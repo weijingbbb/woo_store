@@ -7,6 +7,7 @@
     "navigation_cart": "购物车",
     "navigation_profile": "我的",
 
+    "all": "更多",
     "search": "搜索",
     "search_placeholder": "搜你喜欢",
     "submit": "提交",
@@ -111,5 +112,9 @@
     "choice_address": "选择地址",
     "choice_province": "请选择省份",
     "choice_city": "请选择城市",
-    "choice_district": "请选择区/县"
+    "choice_district": "请选择区/县",
+
+    "hot_products": "热门商品",
+    "new_products": "新品推荐"
+
 }

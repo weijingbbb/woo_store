@@ -115,13 +115,13 @@ class HomePage extends GetView<HomeController> {
         _buildCategories(),
 
         BuildListTitle(
-          title: '热销商品',
+          title: S.current.hot_products.tr,
           onTap: () => controller.onAllTap(true),
         ).sliverToBoxAdapter().sliverPaddingHorizontal(AppSpace.page),
         // 列表
         _buildFlashSell(),
         BuildListTitle(
-          title: '新品推荐',
+          title: S.current.new_products.tr,
           onTap: () => controller.onAllTap(false),
         ).sliverToBoxAdapter().sliverPaddingHorizontal(AppSpace.page),
         // 新商品

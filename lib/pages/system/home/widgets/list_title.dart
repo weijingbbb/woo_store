@@ -1,5 +1,6 @@
 import 'package:ducafe_ui_core/ducafe_ui_core.dart';
 import 'package:flutter/material.dart';
+import 'package:woo_store/generated/l10n.dart';
 import 'package:woo_store/style/index.dart';
 import 'package:woo_store/widgets/index.dart';
 
@@ -33,8 +34,8 @@ class BuildListTitle extends StatelessWidget {
 
       // ALL
       <Widget>[
-        const TextWidget.label(
-          '更多',
+        TextWidget.label(
+          S.current.all,
         ),
         const IconWidget.icon(Icons.chevron_right),
       ]

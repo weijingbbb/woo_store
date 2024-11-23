@@ -27,6 +27,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("bill address"),
         "address_page_title_shipping":
             MessageLookupByLibrary.simpleMessage("shipping address"),
+        "all": MessageLookupByLibrary.simpleMessage("All"),
         "back": MessageLookupByLibrary.simpleMessage("Back"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "choice_address":
@@ -52,6 +53,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "en": MessageLookupByLibrary.simpleMessage("English"),
         "first_name_iput_label":
             MessageLookupByLibrary.simpleMessage("First Name"),
+        "hot_products": MessageLookupByLibrary.simpleMessage("Hot Products"),
         "lang_en": MessageLookupByLibrary.simpleMessage("English"),
         "lang_zh": MessageLookupByLibrary.simpleMessage("Chinese"),
         "language_page_title":
@@ -82,6 +84,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "navigation_cart": MessageLookupByLibrary.simpleMessage("Cart"),
         "navigation_home": MessageLookupByLibrary.simpleMessage("Home"),
         "navigation_profile": MessageLookupByLibrary.simpleMessage("Profile"),
+        "new_products": MessageLookupByLibrary.simpleMessage("New Products"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "no_data": MessageLookupByLibrary.simpleMessage("No Data"),
         "no_more_data": MessageLookupByLibrary.simpleMessage("No More Data"),

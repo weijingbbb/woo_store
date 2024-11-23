@@ -120,6 +120,16 @@ class S {
     );
   }
 
+  /// `All`
+  String get all {
+    return Intl.message(
+      'All',
+      name: 'all',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Search`
   String get search {
     return Intl.message(
@@ -1015,6 +1025,26 @@ class S {
     return Intl.message(
       'choice district',
       name: 'choice_district',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hot Products`
+  String get hot_products {
+    return Intl.message(
+      'Hot Products',
+      name: 'hot_products',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New Products`
+  String get new_products {
+    return Intl.message(
+      'New Products',
+      name: 'new_products',
       desc: '',
       args: [],
     );

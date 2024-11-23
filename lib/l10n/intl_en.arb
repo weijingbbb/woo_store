@@ -7,6 +7,7 @@
     "navigation_cart": "Cart",
     "navigation_profile": "Profile",
 
+    "all": "All",
     "search": "Search",
     "search_placeholder": "Search for goods",
     "submit": "Submit",
@@ -111,5 +112,8 @@
     "choice_address": "choice address",
     "choice_province": "choice province",
     "choice_city": "choice city",
-    "choice_district": "choice district"
+    "choice_district": "choice district",
+
+    "hot_products": "Hot Products",
+    "new_products": "New Products"
 }
