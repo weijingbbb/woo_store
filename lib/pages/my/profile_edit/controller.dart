@@ -76,6 +76,7 @@ class ProfileEditController extends GetxController {
       );
       if (result != null && result.isNotEmpty) {
         filePhoto = await result.first.file;
+        onSaveAvatar();
         update(["profile_edit"]);
         context!.pop();
       }
@@ -122,6 +123,7 @@ class ProfileEditController extends GetxController {
 
     if (result != null) {
       filePhoto = await result.file;
+      onSaveAvatar();
       update(["profile_edit"]);
       context!.pop();
     }
@@ -197,6 +199,26 @@ class ProfileEditController extends GetxController {
       ].toColumn(crossAxisAlignment: CrossAxisAlignment.stretch).center(),
     );
     // _showImagePickerDialog();
+  }
+
+  // 保存头像
+  Future<void> onSaveAvatar() async {
+    if (filePhoto != null) {
+      // 更新本地
+      // UserService.to.setProfile(UserProfileModel.fromJson({
+      //   "avatar": filePhoto!.path,
+      // }));
+      UserService.to.profile.avatarUrl = filePhoto!.path;
+
+      // 更新本地
+      UserService.to.setProfile(UserProfileModel.fromJson(
+        UserService.to.profile.toJson(),
+      ));
+      UserService.to.update();
+      // Console.log('filePhoto: ${UserService.to.profile.avatarUrl}');
+      // update(["profile_edit"]);
+      // Loading.success();
+    }
   }
 
   // 保存

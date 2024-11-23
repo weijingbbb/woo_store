@@ -5,6 +5,7 @@ import 'package:woo_store/apis/index.dart';
 import 'package:woo_store/models/index.dart';
 import 'package:woo_store/pages/system/main/controller.dart';
 import 'package:woo_store/routes/index.dart';
+import 'package:woo_store/utils/index.dart';
 import 'package:woo_store/values/index.dart';
 
 import 'storage.dart';
@@ -45,6 +46,8 @@ class UserService extends GetxController {
     _profile = newProfile;
     StorageService.to
         .setString(Constants.storageProfile, jsonEncode(newProfile));
+    
+    Console.log("setProfile: ${_profile.toJson()}");
   }
 
   // 保存用户的token
